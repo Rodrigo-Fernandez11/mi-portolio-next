@@ -1,15 +1,21 @@
-import { Contact } from '@/components/Contact'
-import { Hero } from '@/components/Hero'
+import AboutMe from '@/components/sections/AboutMe'
+import Blog from '@/components/sections/Blog'
+import ContactSection from '@/components/sections/Contact'
 import Navbar from '@/components/Navbar'
-import { Portafolio } from '@/components/Portfolio'
+import Portfolio from '@/components/sections/Portfolio'
+import HomeSection from '@/components/sections/Home'
+
+
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Portafolio />
-      <Contact />
+      <HomeSection />
+      <AboutMe />
+      <Blog />
+      <Portfolio />
+      <ContactSection />
     </>
   )
 }
