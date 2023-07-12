@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import ContactForm from "../common/ContactForm";
 
 const ContactSection: React.FC = () => {
   return (
@@ -46,63 +47,4 @@ const ContactInformation: React.FC = () => {
     </div>
   );
 };
-
-const ContactForm: React.FC = () => {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // Handle form submission logic here
-  };
-
-  return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md">
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">Get In Touch</h3>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="font-bold mb-1 block">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="font-bold mb-1 block">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="message" className="font-bold mb-1 block">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows={4}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
-              required
-            ></textarea>
-          </div>
-          <div>
-            <button
-              type="submit"
-              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-};
-
 export default ContactSection;

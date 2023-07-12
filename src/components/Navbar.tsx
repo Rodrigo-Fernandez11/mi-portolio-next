@@ -1,48 +1,32 @@
 import React from "react";
 
+interface MenuItem {
+  label: string;
+  href: string;
+}
+
+const menuItems: MenuItem[] = [
+  { label: "Inicio", href: "#" },
+  { label: "Acerca", href: "#" },
+  { label: "Portafolio", href: "#" },
+  { label: "Contacto", href: "#" },
+];
+
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-white text-gray-800 sticky top-0 shadow-lg">
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <a
-          href="#"
-          className="text-3xl font-bold tracking-wider text-gray-900 hover:text-pink-500 transition-colors duration-300"
-        >
-          <span className="text-pink-500">My</span> Portfolio
-        </a>
+    <nav className="bg-white sticky top-0 shadow-sm">
+      <div className="container mx-auto flex items-center justify-end px-4 py-3">
         <ul className="flex space-x-4">
-          <li>
-            <a
-              href="#"
-              className="nav-link hover:text-pink-500 transition-colors duration-300"
-            >
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="nav-link hover:text-pink-500 transition-colors duration-300"
-            >
-              Acerca
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="nav-link hover:text-pink-500 transition-colors duration-300"
-            >
-              Portafolio
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="nav-link hover:text-pink-500 transition-colors duration-300"
-            >
-              Contacto
-            </a>
-          </li>
+          {menuItems.map(({ label, href }, index) => (
+            <li key={index}>
+              <a
+                href={href}
+                className="text-gray-600 hover:text-blue-500 font-medium"
+              >
+                {label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
