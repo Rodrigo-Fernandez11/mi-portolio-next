@@ -1,9 +1,9 @@
 const projects = [
     {
-      title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Tic tac toe",
+      description: "El juego lo creee con React, Vite js y hice huzo de los hooks para practicar la logica de progrmacion",
       techStack: ["React", "Node.js", "MongoDB"],
-      image: "project-1.jpg",
+      image: "tictac1.png",
       demoLink: "https://example.com/project-1",
       githubLink: "https://github.com/user/project-1",
     },

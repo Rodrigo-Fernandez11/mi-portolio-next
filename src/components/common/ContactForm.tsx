@@ -33,8 +33,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md">
-      <div className="p-4">
+    <div className="rounded-lg overflow-hidden shadow-md p-4">
         <h3 className="text-xl font-bold mb-2">Get In Touch</h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -47,7 +46,7 @@ const ContactForm: React.FC = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md text-neutral-950"
               required
             />
           </div>
@@ -61,7 +60,7 @@ const ContactForm: React.FC = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md text-neutral-950"
               required
             />
           </div>
@@ -75,20 +74,19 @@ const ContactForm: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
               rows={4}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md text-neutral-950"
               required
             ></textarea>
           </div>
           <div>
             <button
               type="submit"
-              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+              className="bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700"
             >
               Send Message
             </button>
           </div>
         </form>
-      </div>
     </div>
   );
 };

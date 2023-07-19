@@ -1,85 +1,81 @@
-"use client"
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+"use client";
+import React, { useState, createContext, Dispatch, SetStateAction } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Card from "./Card";
 
-const Carousel: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+interface CarouselItem {
+  title: string;
+  date: string;
+  description: string;
+  imageUrl: string;
+  alt: string;
+}
 
-  const data = [
-    {
-      title: "Card 1",
-      date: "January 1, 2022",
-      description: "This is card 1",
-      technologies: ["Technology 1", "Technology 2", "Technology 3"],
-    },
-    {
-      title: "Card 2",
-      date: "February 15, 2022",
-      description: "This is card 2",
-      technologies: ["Technology 4", "Technology 5", "Technology 6"],
-    },
-    {
-      title: "Card 3",
-      date: "March 27, 2022",
-      description: "This is card 3",
-      technologies: ["Technology 7", "Technology 8", "Technology 9"],
-    },
-    // Agrega más datos de cards aquí
-  ];
+interface CarouselProps {
+  items: CarouselItem[];
+}
+
+interface CarouselContextProps {
+  items: CarouselItem[];
+  currentIndex: number;
+  setCurrentIndex: Dispatch<SetStateAction<number>>;
+}
+
+const CarouselContext = createContext<CarouselContextProps | null>(null);
+
+const Carousel: React.FC<CarouselProps> = ({ items }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const { title, date, description, imageUrl, alt } = items[currentIndex];
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : data.length - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : items.length - 1
+    );
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex < data.length - 1 ? prevIndex + 1 : 0));
+    setCurrentIndex((prevIndex) =>
+      prevIndex < items.length - 1 ? prevIndex + 1 : 0
+    );
   };
 
+  const contextValue: CarouselContextProps = {
+    items,
+    currentIndex,
+    setCurrentIndex,
+  };
+
+  if (!items || items.length === 0) {
+    // Manejar el caso en que no se proporcionen los datos del carrusel
+    return null;
+  }
+
   return (
-    <div className="relative">
-      <div className="flex justify-center mb-4">
+    <CarouselContext.Provider value={contextValue}>
+      <div className="flex justify-between m-4">
         <button
           onClick={handlePrev}
-          className="rounded-full bg-gray-200 p-2 focus:outline-none absolute top-1/2 left-2 transform -translate-y-1/2 z-10 text-gray-700"
+          className="rounded-full bg-blue-400 p-2 focus:outline-none"
         >
           <FaArrowLeft />
         </button>
         <button
           onClick={handleNext}
-          className="rounded-full bg-gray-200 p-2 focus:outline-none absolute top-1/2 right-2 transform -translate-y-1/2 z-10 text-gray-700"
+          className="rounded-full bg-blue-400 p-2 focus:outline-none"
         >
           <FaArrowRight />
         </button>
       </div>
-
-      <div className="flex justify-center">
-        <motion.div
-          className="flex"
-          style={{
-            width: `${data.length * 100}%`,
-            transform: `translateX(-${currentIndex * (100 / data.length)}%)`,
-          }}
-        >
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className="w-full p-4"
-              style={{ width: `${100 / data.length}%` }}
-            >
-              <Card
-                title={item.title}
-                date={item.date}
-                description={item.description}
-                technologies={item.technologies}
-                isActive={index === currentIndex}
-              />
-            </div>
-          ))}
-        </motion.div>
-      </div>
-    </div>
+      <div className="flex flex-col items-center">
+          <Card
+            title={title}
+            date={date}
+            description={description}
+            imageUrl={imageUrl}
+            alt={alt}
+          />
+        </div>
+    </CarouselContext.Provider>
   );
 };
 
