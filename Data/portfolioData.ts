@@ -1,52 +1,42 @@
-const projects = [
-    {
-      title: "Tic tac toe",
-      description: "El juego lo creee con React, Vite js y hice huzo de los hooks para practicar la logica de progrmacion",
-      techStack: ["React", "Node.js", "MongoDB"],
-      image: "tictac1.png",
-      demoLink: "https://example.com/project-1",
-      githubLink: "https://github.com/user/project-1",
-    },
-    {
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      techStack: ["React", "Express.js", "MySQL"],
-      image: "project-2.jpg",
-      demoLink: "https://example.com/project-2",
-      githubLink: "https://github.com/user/project-2",
-    },
-    {
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      techStack: ["React", "Express.js", "MySQL"],
-      image: "project-2.jpg",
-      demoLink: "https://example.com/project-2",
-      githubLink: "https://github.com/user/project-2",
-    },
-    {
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      techStack: ["React", "Express.js", "MySQL"],
-      image: "project-2.jpg",
-      demoLink: "https://example.com/project-2",
-      githubLink: "https://github.com/user/project-2",
-    },
-    {
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      techStack: ["React", "Express.js", "MySQL"],
-      image: "project-2.jpg",
-      demoLink: "https://example.com/project-2",
-      githubLink: "https://github.com/user/project-2",
-    },{
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      techStack: ["React", "Express.js", "MySQL"],
-      image: "project-2.jpg",
-      demoLink: "https://example.com/project-2",
-      githubLink: "https://github.com/user/project-2",
-    }
-    // ...more projects
-  ];
+interface Project {
+  title: string;
+  description: string;
+  techStack: string[];
+  imageProject: string;
+  demoLink: string;
+  githubLink: string;
+  altProject: string;
+}
 
-  export default projects;
+const projects: Project[] = [
+  {
+    title: "Tic tac toe",
+    description: "juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion",
+    techStack: ["React", "Vite js", "CSS"],
+    imageProject: "/images/tictac1.png",
+    demoLink: "demo-link",
+    githubLink: "github-link",
+    altProject: "alt-text"
+  },
+  {
+    title: "Calculadora",
+    description: "Calculadora creada con create react app",
+    techStack: ["React", "Create-react-app", "CSS"],
+    imageProject: "/images/calculadora1.png",
+    demoLink: "demo-link",
+    githubLink: "github-link",
+    altProject: "alt-text"
+  },
+  {
+    title: "Calculadora",
+    description: "Calculadora creada con create react app",
+    techStack: ["React", "Create-react-app", "CSS"],
+    imageProject: "/images/calculadora1.png",
+    demoLink: "demo-link",
+    githubLink: "github-link",
+    altProject: "alt-text"
+  },
+  
+];
+
+export default projects;

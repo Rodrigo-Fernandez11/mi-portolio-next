@@ -11,7 +11,7 @@ export const SocialLink: React.FC<SocialLinkProps> = ({ href, icon, label }) => 
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="hover:text-gray-100 mx-2"
+    className="hover:text-blue-500 mx-2"
   >
     {icon}
     <span className="sr-only">{label}</span>

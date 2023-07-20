@@ -9,7 +9,7 @@ import ContactSection from '@/components/sections/Contact';
 const Home: React.FC = () => {
   return (
     <>
-    <main className='bg-neutral-900 text-neutral-100 px-6'>
+    <main className='bg-neutral-900 text-neutral-100'>
         <ThemeProvider>
         <Navbar />
         <HomeSection />

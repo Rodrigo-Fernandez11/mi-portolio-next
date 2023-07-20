@@ -45,11 +45,6 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
     setCurrentIndex,
   };
 
-  if (!items || items.length === 0) {
-    // Manejar el caso en que no se proporcionen los datos del carrusel
-    return null;
-  }
-
   return (
     <CarouselContext.Provider value={contextValue}>
       <div className="flex justify-between m-4">
