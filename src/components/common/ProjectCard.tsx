@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         {techStack.map((tech) => (
           <span
             key={tech}
-            className="bg-green-900 text-neutral-100 py-1 px-2 mr-2 mb-2 text-sm rounded-lg"
+            className="bg-blue-700 text-neutral-100 py-1 px-2 mr-2 mb-2 text-sm rounded-lg"
           >
             {tech}
           </span>

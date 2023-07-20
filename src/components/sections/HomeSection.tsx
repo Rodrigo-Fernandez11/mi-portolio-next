@@ -17,7 +17,7 @@ export const HomeSection: React.FC = () => {
           <p>
           Soy un apasionado de la tecnología y el emprendimiento, especializado en el Front end. Disfruto participar en comunidades de programación, web3 y marketing digital, donde he conocido personas inspiradoras y colaborado en proyectos desafiantes. Estoy emocionado por seguir aprendiendo, creciendo y aportando mi entusiasmo en entornos innovadores y colaborativos. ¡Te invito a revisar mi portafolio para descubrir más sobre mis proyectos y habilidades!
           </p>
-        <FavoriteTools />
+          <FavoriteTools />
         </div>
       </div>
 
