@@ -7,12 +7,13 @@ import FavoriteTools from "../common/FavoriteTools";
 
 export const HomeSection: React.FC = () => {
   return (
-    <section className="min-h-screen p-10 flex flex-col lg:flex-row justify-center items-center" id="home">
-      <div className="w-full lg:w-1/2 mr-4">
+    <section className="min-h-screen px-10 flex flex-col lg:flex-row justify-center items-center" id="home">
+
+      <div className="w-full lg:w-1/2">
         <h2 className="text-4xl md:text-5xl font-bold">
           HOLA, SOY RODRIGO PEÑA FERNANDEZ 👋 
         </h2>
-        <div className="mt-8 space-y-4 text-lg md:text-lg">
+        <div className="space-y-4 text-lg md:text-lg">
           <span>Full stack Developer</span>
           <p>
           Soy un apasionado de la tecnología y el emprendimiento, especializado en el Front end. Disfruto participar en comunidades de programación, web3 y marketing digital, donde he conocido personas inspiradoras y colaborado en proyectos desafiantes. Estoy emocionado por seguir aprendiendo, creciendo y aportando mi entusiasmo en entornos innovadores y colaborativos. ¡Te invito a revisar mi portafolio para descubrir más sobre mis proyectos y habilidades!
