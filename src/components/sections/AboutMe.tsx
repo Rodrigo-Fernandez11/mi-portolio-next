@@ -1,6 +1,6 @@
 import { Event } from "../common/Event";
 import { FaGraduationCap, FaUserGraduate } from "react-icons/fa";
-import { BsFillPersonFill } from "react-icons/bs";
+import { BsFillPersonFill } from "react-icons/Bs";
 import {
   SiGoogle,
   SiFreecodecamp,
