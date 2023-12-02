@@ -1,5 +1,6 @@
 import { Event } from "@/components/common/Event";
 import { FaGraduationCap, FaUserGraduate, FaHiking } from "react-icons/fa";
+
 import {
   SiGoogle,
   SiFreecodecamp,
