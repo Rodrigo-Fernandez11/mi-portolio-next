@@ -8,8 +8,8 @@ export default function Blog (){
   return (
     <section className="mt-12 mx-auto px-4 max-w-screen-xl md:px-8">
       <div className="text-center">
-        <h1 className="text-3xl font-semibold">Blog</h1>
-        <p className="mt-3 ">
+        <h1 className="text-3xl font-bold">Blog</h1>
+        <p className="mt-3 text-xl">
           Blogs that are loved by the community. Updated every hour.
         </p>
       </div>
@@ -48,8 +48,8 @@ export default function Blog (){
                 </div>
               </div>
               <div className="pt-3 ml-4 mr-2 mb-3">
-                <h3 className="text-xl ">{items.title}</h3>
-                <p className=" text-sm mt-1">{items.desc}</p>
+                <h3 className="text-xl">{items.title}</h3>
+                <p className="text-sm mt-4 text-gray-300">{items.desc}</p>
               </div>
             </a>
           </article>

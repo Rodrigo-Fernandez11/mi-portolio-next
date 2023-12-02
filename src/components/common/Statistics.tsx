@@ -20,8 +20,8 @@ export default function Statics () {
 
   return (
     <section>
-      <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="mt-12">
+      <div className="relative z-40 max-w-screen-xl mx-auto">
+        <div className="mt-4">
           <ul className="flex-wrap gap-x-12 gap-y-10 items-center space-y-8 sm:space-y-0 sm:flex xl:justify-center">
             {stats.map((item, idx) => (
               <li key={idx} className="sm:max-w-[15rem]">
