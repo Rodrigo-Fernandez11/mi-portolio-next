@@ -1,5 +1,5 @@
-import ProjectCard from '../common/ProjectCard';
-import projects from '../../../Data/portfolioData';
+import ProjectCard from '@/components/common/ProjectCard';
+import projects from '../../Data/portfolioData';
 
 const Portfolio: React.FC = () => {
 

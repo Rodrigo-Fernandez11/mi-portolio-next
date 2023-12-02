@@ -4,17 +4,18 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { label: 'Inicio', href: '#home' },
-  { label: 'Acerca', href: '#aboutme' },
-  { label: 'Portafolio', href: '#portfolio' },
-  { label: 'Contacto', href: '#contact' },
+  { label: 'Inicio', href: '/' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Acerca', href: '/aboutMe' },
+  { label: 'Portafolio', href: '/portfolio' },
+  { label: 'Contacto', href: '/contact' },
 ];
 
 const Navbar: React.FC = () => {
 
   return (
-    <nav className="bg-neutral-900 sticky top-0 bg-opacity-80 text-neutral-100">
-      <div className="container mx-auto flex items-center justify-end p-4">
+    <nav className="bg-neutral-900 sticky top-0 bg-opacity-80">
+      <div className="container mx-auto flex items-center justify-end p-2">
         <ul className="flex space-x-4">
           {menuItems.map(({ label, href }, index) => (
             <li key={index}>

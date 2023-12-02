@@ -1,6 +1,6 @@
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { SocialLink } from "../common/SocialLinks";
-import ButtonCv from "../common/ButtonCv";
+import { SocialLink } from "@/components/common/SocialLinks";
+import ButtonCv from "@/components/common/ButtonCv";
 
 const ContactSection: React.FC = () => {
   return (

@@ -1,6 +1,5 @@
-import { Event } from "../common/Event";
-import { FaGraduationCap, FaUserGraduate } from "react-icons/fa";
-import { BsFillPersonFill } from "react-icons/bs";
+import { Event } from "@/components/common/Event";
+import { FaGraduationCap, FaUserGraduate, FaHiking } from "react-icons/fa";
 import {
   SiGoogle,
   SiFreecodecamp,
@@ -61,7 +60,7 @@ const AboutMe: React.FC = () => {
       description: "Seguir consiguiendo mi primer trabajo como desarrollador, mejorar mi nivel de inglés y comenzar la carrera de ingeniería informática",
     },
     {
-      icon: <BsFillPersonFill size={30} />,
+      icon: <FaHiking size={30} />,
       title: "Intereses y pasatiempos",
       organization: "Hobbies",
       description: "Me gusta viajar, el fútbol, las películas y series en general, los emprendimientos y la tecnología tanto en web2 y web3",
