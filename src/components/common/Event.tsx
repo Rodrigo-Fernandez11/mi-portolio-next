@@ -7,13 +7,13 @@ interface EventProps {
   
  export const Event: React.FC<EventProps> = ({ icon, title, description, organization}) => {
     return (
-      <div className="flex items-center shadow-md transition duration-300 hover:border-white border border-transparent rounded-xl">
-        <div className="w-12 h-12 p-3 flex items-center justify-center rounded-full">
+      <div className="flex items-center shadow-md transition duration-300 hover:border-white border border-transparent rounded-xl p-2">
+        <div className="p-3 flex items-center justify-center rounded-full">
           {icon}
         </div>
-        <div className="ml-5">
-          <h4 className="text-xl font-bold">{title}</h4>
-          <span>{organization}</span>
+        <div className="">
+          <h4 className="text-2xl font-bold">{title}</h4>
+          <span className="text-sm py-4 text-blue-500">{organization}</span>
           <p>{description}</p>
         </div>
       </div>

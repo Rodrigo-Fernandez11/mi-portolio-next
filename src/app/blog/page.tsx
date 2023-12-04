@@ -1,19 +1,20 @@
 import posts  from "@/Data/blogData"
 import Image from "next/image";
+import perfil from "../../../public/images/foto-perfil2.webp"
 
 
 export default function Blog (){
   
 
   return (
-    <section className="mt-12 mx-auto px-4 max-w-screen-xl md:px-8">
+    <section className="mt-4 mx-auto px-4 max-w-screen-xl md:px-8">
       <div className="text-center">
-        <h1 className="text-3xl font-bold">Blog</h1>
+        <h1 className="text-3xl font-bold text-blue-500 ">Blog</h1>
         <p className="mt-3 text-xl">
-          Blogs that are loved by the community. Updated every hour.
+          Vienvenidos a mi Blog donde encontraras un poco de mis experiencias en las diversas comunidaeds en las que participo y las increibles personas que pude concer
         </p>
       </div>
-      <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((items, key) => (
           <article
             className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm"
@@ -31,11 +32,11 @@ export default function Blog (){
               <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
                 <div className="flex-none w-10 h-10 rounded-full">
                   <Image
-                    src={items.authorLogo}
-                    className="w-full h-full rounded-full"
+                    src={perfil}
                     alt={items.authorName}
                     width={200}
                     height={200}
+                    className="rounded-full"
                   />
                 </div>
                 <div className="ml-3">
