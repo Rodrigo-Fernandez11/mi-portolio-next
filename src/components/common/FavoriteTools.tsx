@@ -1,33 +1,55 @@
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaReact, FaNodeJs, FaJsSquare, FaDocker, FaFigma, FaTasks } from "react-icons/fa";
-import { SiTailwindcss, SiJavascript, SiTypescript, SiExpress, SiPostgresql, SiJest, SiSolidity, SiMysql } from "react-icons/si";
-import { BsGit } from "react-icons/Bs"
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaSass,
+  FaReact,
+  FaNodeJs,
+  FaDocker,
+  FaFigma,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiExpress,
+  SiPostgresql,
+  SiJest,
+  SiSolidity,
+  SiMysql,
+} from "react-icons/si";
+import { BsGit } from "react-icons/Bs";
 
 const FavoriteTools: React.FC = () => {
   return (
-    <section className="">
-      <h4 className="text-xl my-2">Herramientas y tecnológicas con las que trabajo actualmente:</h4>
-      <div className="flex justify-center space-x-4">
-        <FaHtml5 className="text-2xl text-red-500 hover:text-red-700 transition duration-300" />
-        <FaCss3Alt className="text-2xl text-blue-500 hover:text-blue-700 transition duration-300" />
-        <FaBootstrap className="text-2xl text-purple-500 hover:text-purple-700 transition duration-300" />
-        <FaSass className="text-2xl text-pink-500 hover:text-pink-700 transition duration-300" />
-        <SiTailwindcss className="text-2xl text-cyan-500 hover:text-cyan-700 transition duration-300" />
-        <SiJavascript className="text-2xl text-yellow-500 hover:text-yellow-700 transition duration-300" />
-        <SiTypescript className="text-2xl text-blue-600 hover:text-blue-800 transition duration-300" />
-        <FaNodeJs className="text-2xl text-green-500 hover:text-green-700 transition duration-300" />
-        <SiExpress className="text-2xl text-blue-400 hover:text-blue-600 transition duration-300" />
-        <FaReact className="text-2xl text-blue-400 hover:text-blue-600 transition duration-300" />
-        <BsGit className="text-2xl text-red-500 hover:text-red-700 transition duration-300" />
-        <SiMysql className="text-2xl text-blue-500 hover:text-blue-700 transition duration-300" />
-        <SiSolidity className="text-2xl ext-blue-500 hover:text-blue-700 transition duration-300"/>
+    <section className="py-4">
+      <p className="my-2">
+        Herramientas y tecnológicas con las que trabajo actualmente:
+      </p>
+      <div className="flex justify-center space-x-4 text-3xl transition duration-300">
+        <FaHtml5 className=" text-red-500 hover:text-red-700 " />
+        <FaCss3Alt className=" text-blue-500 hover:text-blue-700 " />
+        <FaBootstrap className=" text-purple-500 hover:text-purple-700 " />
+        <FaSass className=" text-pink-500 hover:text-pink-700 " />
+        <SiTailwindcss className=" text-cyan-500 hover:text-cyan-700 " />
+        <SiJavascript className=" text-yellow-500 hover:text-yellow-700 " />
+        <SiTypescript className=" text-blue-600 hover:text-blue-800 " />
+        <FaNodeJs className=" text-green-500 hover:text-green-700 " />
+        <SiExpress className=" text-blue-400 hover:text-blue-600 " />
+        <FaReact className=" text-blue-400 hover:text-blue-600 " />
+        <BsGit className=" text-red-500 hover:text-red-700 " />
+        <SiMysql className=" text-blue-500 hover:text-blue-700 " />
+        <SiSolidity className=" ext-blue-500 hover:text-blue-700 " />
       </div>
 
-      <h4 className="text-xl my-2">tecnologías que  estoy aprendiendo o interesado en aprender:</h4>
-      <div className="flex justify-center space-x-4">
-        <SiPostgresql className="text-2xl text-blue-400 hover:text-blue-600 transition duration-300" />
-        <FaDocker className="text-2xl text-cyan-400 hover:text-cyan-600 transition duration-300" />
-        <FaFigma className="text-2xl text-purple-500 hover:text-purple-700 transition duration-300" />
-        <SiJest className="text-2xl text-red-500 hover:text-red-700 transition duration-300" />
+      <p className="my-2">
+        tecnologías que estoy aprendiendo o interesado en aprender:
+      </p>
+      <div className="flex justify-center space-x-4 text-3xl">
+        <SiPostgresql className=" text-blue-400 hover:text-blue-600 " />
+        <FaDocker className=" text-cyan-400 hover:text-cyan-600 " />
+        <FaFigma className=" text-purple-500 hover:text-purple-700 " />
+        <SiJest className=" text-red-500 hover:text-red-700 " />
       </div>
     </section>
   );

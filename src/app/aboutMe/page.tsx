@@ -80,51 +80,41 @@ const AboutMe: React.FC = () => {
   ];
 
   return (
-    <section className="min-h-screen p-10 flex flex-col justify-center items-center">
-      <div className="w-full flex flex-col lg:flex-row items-center">
-        <div className="lg:w-1/2 lg:order-2 flex justify-end">
-          <Image src={mindset} height={400} width={400} alt="svg mindset" />
+    <section className="min-h-screen p-5 flex flex-col justify-center items-center">
+      <h2 className="text-2xl lg:text-4xl font-bold pb-8">
+        Un pocos mas cobre mi..
+      </h2>
+      <div className="w-full flex flex-col lg:flex-row items-center my-5">
+        <div className="lg:w-1/2 lg:order-2 flex justify-end m-4">
+          <Image src={mindset} height={400} width={400} alt="svg mindset" priority />
         </div>
-        <div className="lg:w-1/2 lg:order-1 px-5">
-          <h2 className="text-2xl lg:text-4xl font-bold m-4 flex justify-center my-5">
-            Mi Historia en la Intersección de Tecnología y Conexiones Humanas
-          </h2>
-          <div className="px-5">
+        <div className="lg:w-1/2 lg:order-1 p-5">
+          
             <p>
-              🎓 Comencé mi viaje en tecnología con la beca Crece con Google de
-              Junior Achievement y Google en Marketing Digital. Durante esta
-              etapa, no solo adquirí conocimientos, sino que tuve la oportunidad
-              de sumergirme en un mundo donde las ideas se fusionan con la
-              innovación.
+              En 2018, comencé mi viaje en tecnología con la beca Crece con
+              Google de Junior Achievement y Google en Marketing Digital.
+              Durante este tiempo, mi autodidactismo en programación se
+              convirtió en una pasión en constante evolución.
             </p>
-            <p className="mt-4">
-              💻 Paralelamente, mi autodidactismo en programación se convirtió
-              en una pasión en constante evolución. Enfoqué mi aprendizaje en
-              tecnologías específicas, buscando una especialización que ahora me
-              impulsa a crecer más en ese campo.
+
+            <p>
+              Tras completar el programa, en 2019, profundicé en el campo del
+              Marketing Digital, adquiriendo herramientas para emprender
+              proyectos desafiantes.
             </p>
-            <p className="mt-4">
-              🛒 Tras concluir el programa de Crece con Google, mi curiosidad me
-              llevó a profundizar en el campo del Marketing Digital. Estas
-              experiencias han proporcionado una perspectiva rica y las
-              herramientas necesarias para emprender proyectos personales
-              desafiantes.
+
+            <p>
+              Durante 2020 y 2021, me involucré en comunidades tecnológicas,
+              participando activamente en meetups, hackathones y eventos,
+              estableciendo conexiones significativas.
             </p>
-            <p className="mt-4">
-              🤝 Durante mi viaje de aprendizaje, me sumergí en diversas
-              comunidades, participando activamente en meetups, hackathones y
-              eventos. Aquí no solo probé mis habilidades, sino que también
-              encontré mentores valiosos y hice conexiones significativas.
-            </p>
-            <p className="mt-4">
-              🌍📚 Mi hambre de conocimiento es insaciable. Siempre estoy ávido
-              por aprender más, participar en eventos y continuar mi
-              crecimiento, tanto personal como profesional. Actualmente, busco
-              un entorno colaborativo donde pueda contribuir, aprender de
-              expertos y aportar con mi pasión por la tecnología y el diseño
+
+            <p>
+              En la actualidad, busco un entorno colaborativo donde pueda seguir
+              creciendo, contribuir con mi pasión por la tecnología y el diseño
               centrado en el usuario.
             </p>
-          </div>
+
         </div>
       </div>
 

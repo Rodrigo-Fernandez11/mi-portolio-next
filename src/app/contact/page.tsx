@@ -1,5 +1,5 @@
 "use client"
-export default function Contact () {
+export default function Contact() {
   const contactMethods = [
     {
       icon: (
@@ -18,7 +18,7 @@ export default function Contact () {
           />
         </svg>
       ),
-      contact: "Support@example.com",
+      contact: "rodrip602@gmail.com",
     },
     {
       icon: (
@@ -37,7 +37,7 @@ export default function Contact () {
           />
         </svg>
       ),
-      contact: "+1 (555) 000-000",
+      contact: "11 23 018269",
     },
     {
       icon: (
@@ -61,7 +61,7 @@ export default function Contact () {
           />
         </svg>
       ),
-      contact: "Mountain View, California, United State.",
+      contact: "Buenos aires, Argentina",
     },
   ];
 
@@ -72,12 +72,12 @@ export default function Contact () {
           <div className="max-w-lg space-y-3">
             <h3 className="text-indigo-600 font-semibold">Contact</h3>
             <p className="text-3xl font-semibold sm:text-4xl">
-              Let us know how we can help
+              ¿ como podemos ayudarlo ?
             </p>
             <p>
-              We’re here to help and answer any question you might have, We look
-              forward to hearing from you! Please fill out the form, or us the
-              contact information bellow .
+              Estamos aqui para ayudarle y responder cualquier pregunta que
+              pueda tener. Esperamos escuchar de usted porfavor complete el
+              formulario o contactenos atravez de los siguientes medios
             </p>
             <div>
               <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
@@ -132,4 +132,4 @@ export default function Contact () {
       </div>
     </main>
   );
-};
+}
