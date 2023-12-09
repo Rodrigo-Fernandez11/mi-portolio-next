@@ -1,4 +1,4 @@
-"use client"
+"use client";
 export default function Contact() {
   const contactMethods = [
     {
@@ -72,7 +72,7 @@ export default function Contact() {
           <div className="max-w-lg space-y-3">
             <h3 className="text-indigo-600 font-semibold">Contact</h3>
             <p className="text-3xl font-semibold sm:text-4xl">
-              ¿ como podemos ayudarlo ?
+              ¿ como puedo ayudarte ?
             </p>
             <p>
               Estamos aqui para ayudarle y responder cualquier pregunta que

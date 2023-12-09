@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
       title: "Certificado Front-end developer",
       organization: "FreeCodeCamp",
       description:
-        "Aprendí a programar de manera práctica con los recursos de la página",
+        "Mis primeros pasos en programacion fueron en esta pagina por que ofrece difeerentes desafios practicos a medida que avanzas con ruta de aprendizaje",
     },
     {
       icon: <SiPlatzi size={30} />,
@@ -47,74 +47,81 @@ const AboutMe: React.FC = () => {
       title: "Hackathon King of devs",
       organization: "Solow x Ripio",
       description:
-        "Participé como front-end developer en mi equipo para nuestro proyecto en web 3",
+        "Participé en 2 ocaciones como front-end developer y Back-end en mi equipo para nuestro proyecto en web 3",
     },
     {
       icon: <SiReact size={30} />,
       title: "Comunidad React Buenos Aires",
       organization: "React Buenos Aires",
       description:
-        "Participo en los meetups presenciales de la comunidad React sobre distintos temas en oficinas de diversas empresas para aprender y conocer personas",
+        "Participo en los meetups presenciales de la comunidad React sobre distintos charlas de temas tecnicos en oficinas de diversas empresas para aprender y hacer networking",
     },
     {
       icon: <SiGoogleanalytics size={30} />,
       title: "Carrera de Marketing Digital",
       organization: "Coder House",
       description:
-        "Complete con éxito las tres etapas de la carrera de marketing digital de Coder House (Community Manager, Publicidad en Redes Avanzadas, Growth Marketing) para aplicarlos en proyectos personales",
+        "Complete con éxito las tres etapas de la carrera de marketing digital de Coder House (Community Manager, Publicidad en Redes Avanzadas, Growth Marketing) para aplicarlos en proyectos personales y profundizar en las bases que tenia de Marketing digital",
     },
     {
       icon: <FaUserGraduate size={30} />,
-      title: "Objetivos",
-      organization: "Educación",
+      title: "Objetivos personales",
+      organization: "Desarrollo personal",
       description:
-        "Seguir consiguiendo mi primer trabajo como desarrollador, mejorar mi nivel de inglés y comenzar la carrera de ingeniería informática",
+        "Empezar mi carrera profesional como desarrollador, mejorar mi nivel de inglés y comenzar la carrera de ingeniería informática",
     },
     {
       icon: <FaHiking size={30} />,
       title: "Intereses y pasatiempos",
       organization: "Hobbies",
       description:
-        "Me gusta viajar, el fútbol, las películas y series en general, los emprendimientos y la tecnología tanto en web2 y web3",
+        "Me gusta viajar, el fútbol, las películas y series en general, entusiastan de emprendimientos, startups y la tecnología tanto web2 y web3",
     },
   ];
 
   return (
     <section className="min-h-screen p-5 flex flex-col justify-center items-center">
-      <h2 className="text-2xl lg:text-4xl font-bold pb-8">
+      <h2 className="text-3xl lg:text-4xl font-bold text-indigo-600">
         Un pocos mas cobre mi..
       </h2>
       <div className="w-full flex flex-col lg:flex-row items-center my-5">
-        <div className="lg:w-1/2 lg:order-2 flex justify-end m-4">
-          <Image src={mindset} height={400} width={400} alt="svg mindset" priority />
+        <div className="lg:w-1/3 lg:order-2 flex justify-end m-4">
+          <Image
+            src={mindset}
+            height={400}
+            width={400}
+            alt="svg mindset"
+            priority
+          />
         </div>
-        <div className="lg:w-1/2 lg:order-1 p-5">
-          
-            <p>
-              En 2018, comencé mi viaje en tecnología con la beca Crece con
-              Google de Junior Achievement y Google en Marketing Digital.
-              Durante este tiempo, mi autodidactismo en programación se
-              convirtió en una pasión en constante evolución.
-            </p>
-
-            <p>
-              Tras completar el programa, en 2019, profundicé en el campo del
-              Marketing Digital, adquiriendo herramientas para emprender
-              proyectos desafiantes.
-            </p>
-
-            <p>
-              Durante 2020 y 2021, me involucré en comunidades tecnológicas,
-              participando activamente en meetups, hackathones y eventos,
-              estableciendo conexiones significativas.
-            </p>
-
-            <p>
-              En la actualidad, busco un entorno colaborativo donde pueda seguir
-              creciendo, contribuir con mi pasión por la tecnología y el diseño
-              centrado en el usuario.
-            </p>
-
+        <div className="lg:w-2/3 lg:order-1 p-5">
+          <p>
+            Soy una persona curiosa e inquieta, me intriga saber cómo funcionan
+            las cosas y disfruto formando parte de comunidades donde conecto y
+            aprendo de personas con la misma pasión.
+            <br />
+            <br />
+            En 2022, decidí emprender y capacitarme en el campo que siempre me
+            atrajo: la tecnología. Busqué información y recursos que me llevaron
+            a ser aceptado en la beca de Google en marketing digital. Durante
+            mis estudios, comprendí la importancia de los sitios web, así que
+            comencé a explorar la programación gradualmente, ya que considero
+            que estas dos habilidades se complementan.
+            <br />
+            <br />
+            Posteriormente, me especialicé en lo que más me gustaba, desarrollo
+            web. Investigando una ruta de aprendizaje, simultáneamente culminé
+            mis estudios de marketing digital con la carrera de Coder House para
+            profundizar mis conocimientos.
+            <br />
+            <br />
+            En 2023, me formé como full-stack developer. Aunque continúo
+            aprendiendo, participo activamente en diversas comunidades,
+            hackathones de desarrollo y Blockchain, donde aprendí Solidity para
+            crear aplicaciones descentralizadas. Trabajé en equipo con personas
+            más experimentadas o de otros sectores y comencé a trabajar como
+            freelance para adquirir experiencia.
+          </p>
         </div>
       </div>
 

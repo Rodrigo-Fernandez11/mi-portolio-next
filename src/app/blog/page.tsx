@@ -6,7 +6,7 @@ export default function Blog() {
   return (
     <section className="mt-4 mx-auto p-4 max-w-screen-xl md:px-8">
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-blue-500 ">Blog</h1>
+        <h1 className="text-4xl font-bold text-indigo-600 ">Blog</h1>
         <p className="mt-3 text-xl">
           Bienvenidos a mi Blog, soy una persona que le gusta ser curiosa,
           inquieta, que le gusta participar en diferentes comunidades, eventos y

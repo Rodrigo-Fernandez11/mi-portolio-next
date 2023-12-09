@@ -39,13 +39,13 @@ const FavoriteTools: React.FC = () => {
         <FaReact className=" text-blue-400 hover:text-blue-600 " />
         <BsGit className=" text-red-500 hover:text-red-700 " />
         <SiMysql className=" text-blue-500 hover:text-blue-700 " />
-        <SiSolidity className=" ext-blue-500 hover:text-blue-700 " />
+        <SiSolidity className=" text-blue-500 hover:text-blue-700 " />
       </div>
 
       <p className="my-2">
         tecnologías que estoy aprendiendo o interesado en aprender:
       </p>
-      <div className="flex justify-center space-x-4 text-3xl">
+      <div className="flex justify-center space-x-4 text-3xl transition duration-300">
         <SiPostgresql className=" text-blue-400 hover:text-blue-600 " />
         <FaDocker className=" text-cyan-400 hover:text-cyan-600 " />
         <FaFigma className=" text-purple-500 hover:text-purple-700 " />
