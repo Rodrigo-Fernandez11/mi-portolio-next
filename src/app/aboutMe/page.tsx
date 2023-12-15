@@ -12,7 +12,7 @@ import {
 } from "react-icons/si";
 import Image from "next/image";
 
-const AboutMe: React.FC = () => {
+export default function AboutMe() {
   const events = [
     {
       icon: <SiFreecodecamp size={30} />,
@@ -140,6 +140,4 @@ const AboutMe: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default AboutMe;
+}

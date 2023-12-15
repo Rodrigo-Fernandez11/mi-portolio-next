@@ -1,10 +1,10 @@
 import ProjectCard from "@/components/common/ProjectCard";
 import tictac from "../../../public/images/tictac1.png";
 
-const Portfolio = () => {
+export default function Portfolio() {
   return (
     <section className="py-4 w-full mx-auto sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold flex justify-center">Portfolio</h2>
+      <h2 className="text-3xl text-indigo-700 font-bold flex justify-center">Portfolio</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <ProjectCard
           title="Brujula financiera"
@@ -82,4 +82,3 @@ const Portfolio = () => {
     </section>
   );
 };
-export default Portfolio;

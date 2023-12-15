@@ -6,7 +6,7 @@ import FavoriteTools from "@/components/common/FavoriteTools";
 import FotoPerfil from "../../public/images/foto-perfil2.webp";
 import Statics from "@/components/common/Statistics";
 
-const Home = () => {
+export default function Home() {
   return (
     <section className="min-h-screen p-5 flex flex-col lg:flex-row justify-center items-center">
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center mb-4">
@@ -59,4 +59,3 @@ const Home = () => {
     </section>
   );
 };
-export default Home;
