@@ -40,19 +40,22 @@ export default function Home() {
       </div>
       <div className="w-full lg:w-1/2 my-2">
         <h2 className="text-4xl md:text-5xl font-bold">
-          HOLA, SOY RODRIGO PEÑA FERNANDEZ 👋
+          Hello, I am Rodrigo Peña Fernandez. 👋
         </h2>
         <div className="mt-8 space-y-4 text-lg md:text-lg">
-          <span>
-            Full stack Developer JavaScript / Marketing digital / Blockchain
-            Solidity Engineer
+          <span className="text-sky-200">
+            Front-end Developer / Blockchain Solidity Engineer / Digital
+            Marketing
           </span>
           <p>
-            Curioso, colaborativo y apasionado por el emprendimiento y la
-            tecnología, especializado en programación web y Blockchain. Con
-            experiencia en marketing digital y dando forma a emprendimientos e
-            ideas, manteniéndome actualizado cada día y participando en diversas
-            comunidades y hackathones.
+            <span className="text-yellow-200">
+              Inquisitive, collaborative, and passionate about entrepreneurship
+              and technology
+            </span>
+            , specialized in web programming and Blockchain. With experience in
+            digital marketing and shaping startups and ideas, keeping myself
+            updated every day and participating in various communities and
+            hackathons.
           </p>
           <FavoriteTools />
         </div>

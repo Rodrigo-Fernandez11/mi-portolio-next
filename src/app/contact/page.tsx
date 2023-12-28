@@ -4,22 +4,21 @@ import { ContactMethod } from "@/components/common/ContactMethod";
 
 export default function Contact() {
   return (
-    <main className="py-14">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-        <section className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
-          <div className="max-w-lg space-y-6">
+    <main className="w-full min-h-screen px-6 flex justify-center items-center">
+      <section className="w-full max-w-screen-lg flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2 lg:pr-4 my-4">
+          <div className="max-w-lg mx-auto lg:ml-0 lg:mr-auto lg:max-w-none lg:mt-0">
             <header>
-              <h1 className="text-indigo-600 font-semibold text-3xl sm:text-4xl">
-                Contact
-              </h1>
-              <p className="text-2xl font-semibold">¿Cómo puedo ayudarte?</p>
+              <h3 className="text-2xl font-semibold pb-4">
+                How can I help you?
+              </h3>
               <p>
-                Estamos aquí para ayudarte y responder cualquier pregunta que
-                puedas tener. Por favor, completa el formulario o contáctanos a
-                través de los siguientes medios.
+                We re here to assist you and answer any questions you may have.
+                Please fill out the form or contact us through the following
+                methods.
               </p>
             </header>
-            <div className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center ">
+            <div className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
               <ContactMethod
                 icon={<FaMapMarkerAlt className="text-xl" />}
                 contact="Buenos Aires, Argentina"
@@ -30,15 +29,17 @@ export default function Contact() {
               />
               <ContactMethod
                 icon={<FaPhone className="text-xl" />}
-                contact="11 23 018269"
+                contact="+54 9 11 23 018269"
               />
             </div>
           </div>
-          <div className="flex-1 mt-4 sm:max-w-lg lg:max-w-md">
+        </div>
+        <div className="w-full lg:w-1/2 lg:pl-4 lg:mt-0 my-4">
+          <div className="max-w-lg mx-auto lg:ml-auto lg:mr-0 lg:max-w-md">
             <ContactForm />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }
