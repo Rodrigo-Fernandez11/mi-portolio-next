@@ -13,6 +13,7 @@ export default function Home() {
         <Image
           src={FotoPerfil}
           alt="foto perfil rodrigo peña"
+          priority
           className="rounded-full"
           width={200}
           height={200}
@@ -58,4 +59,4 @@ export default function Home() {
       </div>
     </section>
   );
-};
+}

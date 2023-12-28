@@ -12,6 +12,7 @@ import {
   SiTailwindcss,
   SiJavascript,
   SiTypescript,
+  SiNextdotjs,
   SiExpress,
   SiPostgresql,
   SiJest,
@@ -22,7 +23,7 @@ import { BsGit } from "react-icons/Bs";
 
 const FavoriteTools: React.FC = () => {
   return (
-    <section className="py-4">
+    <div className="py-4">
       <p className="my-2">
         Herramientas y tecnológicas con las que trabajo actualmente:
       </p>
@@ -34,6 +35,7 @@ const FavoriteTools: React.FC = () => {
         <SiTailwindcss className=" text-cyan-500 hover:text-cyan-700 " />
         <SiJavascript className=" text-yellow-500 hover:text-yellow-700 " />
         <SiTypescript className=" text-blue-600 hover:text-blue-800 " />
+        <SiNextdotjs className=" text-white hover:text-neutral-700 " />
         <FaNodeJs className=" text-green-500 hover:text-green-700 " />
         <SiExpress className=" text-blue-400 hover:text-blue-600 " />
         <FaReact className=" text-blue-400 hover:text-blue-600 " />
@@ -51,7 +53,7 @@ const FavoriteTools: React.FC = () => {
         <FaFigma className=" text-purple-500 hover:text-purple-700 " />
         <SiJest className=" text-red-500 hover:text-red-700 " />
       </div>
-    </section>
+    </div>
   );
 };
 
