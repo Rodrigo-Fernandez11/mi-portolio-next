@@ -15,11 +15,25 @@ import Image from "next/image";
 export default function AboutMe() {
   const events = [
     {
+      icon: <FaUserGraduate size={30} />,
+      title: "Objetivos personales",
+      organization: "Desarrollo personal",
+      description:
+        "Empezar mi carrera profesional como desarrollador, mejorar mi nivel de inglés y comenzar la carrera de ingeniería informática",
+    },
+    {
+      icon: <FaHiking size={30} />,
+      title: "Intereses y pasatiempos",
+      organization: "Hobbies",
+      description:
+        "Me gusta viajar, el fútbol, las películas y series en general, entusiastan de emprendimientos, startups y la tecnología tanto web2 y web3",
+    },
+    {
       icon: <SiFreecodecamp size={30} />,
       title: "Certificado Front-end developer",
       organization: "FreeCodeCamp",
       description:
-        "Mis primeros pasos en programacion fueron en esta pagina por que ofrece difeerentes desafios practicos a medida que avanzas con ruta de aprendizaje",
+        "Mis primeros pasos en programación fueron en esta página porque ofrece diferentes desafíos prácticos a medida que avanzas con ruta de aprendizaje",
     },
     {
       icon: <SiPlatzi size={30} />,
@@ -47,7 +61,7 @@ export default function AboutMe() {
       title: "Hackathon King of devs",
       organization: "Solow x Ripio",
       description:
-        "Participé en 2 ocaciones como front-end developer y Back-end en mi equipo para nuestro proyecto en web 3",
+        "Participé en 2 ocaciones como front-end developer y Back-end en mi equipo para nuestro proyecto en web3",
     },
     {
       icon: <SiReact size={30} />,
@@ -62,20 +76,6 @@ export default function AboutMe() {
       organization: "Coder House",
       description:
         "Complete con éxito las tres etapas de la carrera de marketing digital de Coder House (Community Manager, Publicidad en Redes Avanzadas, Growth Marketing) para aplicarlos en proyectos personales y profundizar en las bases que tenia de Marketing digital",
-    },
-    {
-      icon: <FaUserGraduate size={30} />,
-      title: "Objetivos personales",
-      organization: "Desarrollo personal",
-      description:
-        "Empezar mi carrera profesional como desarrollador, mejorar mi nivel de inglés y comenzar la carrera de ingeniería informática",
-    },
-    {
-      icon: <FaHiking size={30} />,
-      title: "Intereses y pasatiempos",
-      organization: "Hobbies",
-      description:
-        "Me gusta viajar, el fútbol, las películas y series en general, entusiastan de emprendimientos, startups y la tecnología tanto web2 y web3",
     },
   ];
 

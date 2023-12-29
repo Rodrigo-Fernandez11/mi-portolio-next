@@ -35,14 +35,14 @@ export default function Blog() {
           title="BSMNT 101 Toolkit"
           alt="basement studio"
           date="octubre 31 2023"
-          desc="En la reunión de noviembre de React Buenos Aires, tuvimos el placer de conocer a Basement Studio. Su charla fue sumamente interesante, ya que nos adentraron en sus proyectos, los desafíos que enfrentaron durante el desarrollo, sus soluciones y la lógica detrás de las herramientas que utilizaron. Fue una sesión en la que aprendí muchísimo sobre el proceso de desarrollo y resolución de problemas en el campo de React."
+          desc="En la reunión de noviembre de React Buenos Aires, tuvimos el placer de conocer a Basement Studio. Su charla fue sumamente interesante, ya que nos adentraron en sus proyectos, su alcance, los desafíos que enfrentaron durante el desarrollo, sus soluciones y la lógica detrás de las herramientas que utilizaron o ellos mismos crearon, por ejemplo, hooks propios. Fue una sesión en la que aprendí muchísimo sobre el proceso de desarrollo y resolución de problemas en el campo de React."
         />
         <BlogCard
           img={rocket}
           title="Performance con Lazy Load en React Native"
           alt="react native the rocket base"
           date="octubre 6 2023"
-          desc="En la meetup de octubre conocimos a the Rocket base que nos dio una charla de mejora de performance con lazy load en React Native y nos contó más sobre ellos y su trabajo, luego como es de costumbre compartimos un agradable momento de networking."
+          desc="En la meetup de octubre conocimos a Rocketbase, que nos dio una charla sobre mejora de performance con lazy load en React Native. También nos contaron más sobre ellos, sus objetivos y cómo buscan trabajar para startups que están en sus inicios y desean construir los equipos en base a su presupuesto y necesidades. Por último, como es de costumbre, compartimos un agradable momento de networking."
         />
         <BlogCard
           img={modoSignals}
