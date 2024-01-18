@@ -24,7 +24,9 @@ import { BsGit } from "react-icons/Bs";
 const FavoriteTools: React.FC = () => {
   return (
     <div className="py-4">
-      <p className="my-2">Tools and technologies I currently work with:</p>
+      <p className="my-2">
+        Herramientas y tecnologías con las que trabajo actualmente:
+      </p>
       <div className="flex justify-center space-x-4 text-3xl transition duration-300">
         <FaHtml5 className=" text-red-500 hover:text-red-700 " />
         <FaCss3Alt className=" text-blue-500 hover:text-blue-700 " />
@@ -43,7 +45,7 @@ const FavoriteTools: React.FC = () => {
       </div>
 
       <p className="my-2">
-        Technologies I m learning or interested in learning:
+        Tecnologías que estoy aprendiendo o me interesa aprender:
       </p>
       <div className="flex justify-center space-x-4 text-3xl transition duration-300">
         <SiPostgresql className=" text-blue-400 hover:text-blue-600 " />

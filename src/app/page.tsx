@@ -44,18 +44,20 @@ export default function Home() {
         </h2>
         <div className="mt-8 space-y-4 text-lg md:text-lg">
           <span className="text-sky-200">
-            Front-end Developer / Blockchain Solidity Engineer / Digital
+            Full stack Developer / Blockchain Solidity Engineer / Digital
             Marketing
           </span>
           <p>
             <span className="text-yellow-200">
-              Inquisitive, collaborative, and passionate about entrepreneurship
-              and technology
+              Curioso, colaborativo y apasionado por el emprendimiento y las
+              comunidades IT
             </span>
-            , specialized in web programming and Blockchain. With experience in
-            digital marketing and shaping startups and ideas, keeping myself
-            updated every day and participating in various communities and
-            hackathons.
+            , especializado en desarrollo front-end React con sólidos
+            conocimientos en backend Node.js y desarrollo blockchain con
+            Solidity. Además, cuento con experiencia en marketing digital, estas
+            habilidades las he aplicado y demostrado en proyectos personales,
+            freelance y en mi participación en diversas comunidades y
+            hackathons.”
           </p>
           <FavoriteTools />
         </div>

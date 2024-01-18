@@ -4,6 +4,9 @@ import alkemy from "../../../public/images/alkemy.webp";
 import calculadora from "../../../public/images/calculadora.webp";
 import clima from "../../../public/images/clima.webp";
 import tictac from "../../../public/images/tictac.webp";
+import preguntas from "../../../public/images/preguntas.webp";
+import mercadoPago from "../../../public/images/mercadoPago.webp";
+import crudRedux from "../../../public/images/crudRedux.webp";
 
 export default function Portfolio() {
   return (
@@ -14,67 +17,64 @@ export default function Portfolio() {
       <p></p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <ProjectCard
-          title="Brujula financiera"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
-          imageProject={tictac}
-          demoLink="https://quiet-croissant-5d324a.netlify.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
-        />
-        <ProjectCard
           title="Landing Tesla"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
+          techStack={["React", "Vite js", "Tailwind CSS"]}
           imageProject={tesla}
-          demoLink="https://quiet-croissant-5d324a.netlify.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
+          demoLink="https://landing-tesla-ruby-five.vercel.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/landing-tesla"
+          altProject="Landing de Tesla"
         />
         <ProjectCard
           title="Alkemy challenge"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
+          techStack={[
+            "React",
+            "React-route",
+            "Vite js",
+            "Axios",
+            "React-Bootstrap",
+          ]}
           imageProject={alkemy}
-          demoLink="https://quiet-croissant-5d324a.netlify.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
+          demoLink="https://alkemy-challenge-blue.vercel.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/alkemy"
+          altProject="Proyecto Alkemy Challenge"
         />
         <ProjectCard
           title="CRUD Redux"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
-          imageProject={tictac}
-          demoLink="https://quiet-croissant-5d324a.netlify.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
+          techStack={["React", "TypeScript", "Redux", "CSS"]}
+          imageProject={crudRedux}
+          demoLink="https://crud-redux-lovat.vercel.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/crud-redux"
+          altProject="CRUD con Redux"
         />
         <ProjectCard
           title="Mercado Pago"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
-          imageProject={tictac}
-          demoLink="https://quiet-croissant-5d324a.netlify.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
+          techStack={["React", "Vite js", "Node JS"]}
+          imageProject={mercadoPago}
+          demoLink="https://mercado-pago.vercel.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/mercado-pago"
+          altProject="Pago con Mercado Pago"
         />
         <ProjectCard
-          title="Next AI"
+          title="Preguntas Anonimas"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
-          imageProject={tictac}
-          demoLink="https://quiet-croissant-5d324a.netlify.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
+          techStack={["Next JS", "TypeScript", "Supabase", "Tailwind CSS"]}
+          imageProject={preguntas}
+          demoLink="https://preguntas-anonimas-akgrow4zg-rodrigo-fernandez11.vercel.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/Preguntas-Anonimas"
+          altProject="Preguntas anonimas"
         />
         <ProjectCard
-          title="Widt clima"
+          title="Widtget clima"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
           techStack={["React", "Vite js", "CSS"]}
           imageProject={clima}
           demoLink="https://quiet-croissant-5d324a.netlify.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
+          altProject="Widget clima"
         />
         <ProjectCard
           title="Tic tac toe"
@@ -88,11 +88,11 @@ export default function Portfolio() {
         <ProjectCard
           title="Calculadora"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
+          techStack={["React", "CSS"]}
           imageProject={calculadora}
-          demoLink="https://quiet-croissant-5d324a.netlify.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
+          demoLink="https://meek-dango-d621f4.netlify.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/calculadora-react"
+          altProject="Calculadora con React"
         />
       </div>
     </section>

@@ -30,7 +30,7 @@ export default function AboutMe() {
     },
     {
       icon: <SiFreecodecamp size={30} />,
-      title: "Certificado Front-end developer",
+      title: "Aprendiendo a programar",
       organization: "FreeCodeCamp",
       description:
         "Mis primeros pasos en programación fueron en esta página porque ofrece diferentes desafíos prácticos a medida que avanzas con ruta de aprendizaje",
@@ -51,8 +51,8 @@ export default function AboutMe() {
     },
     {
       icon: <SiGoogle size={30} />,
-      title: "Marketing Digital",
-      organization: "Google y Junior Archievement",
+      title: "Beca Marketing Digital",
+      organization: "Crece con Google y Junior Archievement",
       description:
         "Participé en clases virtuales grupales con profesionales de Google y Junior Archievement sobre marketing digital y habilidades blandas",
     },

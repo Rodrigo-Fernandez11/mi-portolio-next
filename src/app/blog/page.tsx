@@ -13,15 +13,7 @@ import itJoven from "../../../public/images/itjoven.webp";
 export default function Blog() {
   return (
     <section className="mt-4 mx-auto p-4 max-w-screen-xl md:px-8">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-indigo-600 ">Blog</h1>
-        <p className="mt-3 text-xl">
-          Bienvenidos a mi Blog, soy una persona que le gusta ser curiosa,
-          inquieta, que le gusta participar en diferentes comunidades, eventos y
-          programas, esto me llevo a tener diversas experiencias que me siguen
-          formando
-        </p>
-      </div>
+      <h1 className=" text-center text-4xl font-bold text-indigo-600 ">Blog</h1>
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <BlogCard
           img={talento}
