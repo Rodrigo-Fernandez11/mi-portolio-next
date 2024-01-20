@@ -1,5 +1,4 @@
-import { AiOutlineLink } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiFolder } from "react-icons/fi";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 
@@ -46,7 +45,7 @@ const ProjectCard: React.FC<Project> = ({
           rel="noopener noreferrer"
           className=" hover:text-purple-700 flex items-center"
         >
-          <AiOutlineLink /> View Demo
+          <FiFolder className="mx-2" /> View Demo
         </a>
         <a
           href={githubLink}
@@ -54,7 +53,7 @@ const ProjectCard: React.FC<Project> = ({
           rel="noopener noreferrer"
           className="hover:text-purple-700 flex items-center"
         >
-          <FiGithub /> View on GitHub
+          <FiGithub className="mx-2" /> View on GitHub
         </a>
       </div>
     </div>

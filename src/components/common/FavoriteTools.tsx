@@ -7,6 +7,7 @@ import {
   FaNodeJs,
   FaDocker,
   FaFigma,
+  FaGitAlt,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -19,7 +20,6 @@ import {
   SiSolidity,
   SiMysql,
 } from "react-icons/si";
-import { BsGit } from "react-icons/Bs";
 
 const FavoriteTools: React.FC = () => {
   return (
@@ -39,7 +39,7 @@ const FavoriteTools: React.FC = () => {
         <FaNodeJs className=" text-green-500 hover:text-green-700 " />
         <SiExpress className=" text-blue-400 hover:text-blue-600 " />
         <FaReact className=" text-blue-400 hover:text-blue-600 " />
-        <BsGit className=" text-red-500 hover:text-red-700 " />
+        <FaGitAlt className=" text-red-500 hover:text-red-700 " />
         <SiMysql className=" text-blue-500 hover:text-blue-700 " />
         <SiSolidity className=" text-blue-500 hover:text-blue-700 " />
       </div>
