@@ -36,7 +36,7 @@ export const ContactForm = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className="space-y-5">
       <div>
-        <label className="font-medium">Full name</label>
+        <label className="font-medium">Nombre Completo</label>
         <input
           type="text"
           name="user_name"
@@ -54,7 +54,7 @@ export const ContactForm = () => {
         />
       </div>
       <div>
-        <label className="font-medium">Message</label>
+        <label className="font-medium">Mensaje</label>
         <textarea
           required
           name="message"
@@ -62,7 +62,7 @@ export const ContactForm = () => {
         ></textarea>
       </div>
       <button className="w-full px-4 py-2  font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
-        Submit
+        Enviar
       </button>
       {isSubmitted && (
         <p className="bg-green-100 border border-green-400 text-green-700 px-4 py-2 rounded-md">

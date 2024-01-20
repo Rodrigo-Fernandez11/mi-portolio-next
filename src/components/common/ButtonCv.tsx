@@ -1,12 +1,13 @@
-import Link from "next/link";
-
-function ButtonCv() {
+export default function ButtonCv() {
   return (
-    <Link href="/pdf/cv-rodrigo.pdf" target="_blank" rel="noopener noreferrer">
-      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full mt-8 block text-center">
+    <a
+      href="https://drive.google.com/file/d/1gE8J6MZGh0KyHQ1PRIK0r1WQR-EmIxyY/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full block text-center ">
         Download CV
       </button>
-    </Link>
+    </a>
   );
 }
-export default ButtonCv;

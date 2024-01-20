@@ -4,7 +4,7 @@ import { SocialLink } from "@/components/common/SocialLinks";
 import ButtonCv from "@/components/common/ButtonCv";
 import FavoriteTools from "@/components/common/FavoriteTools";
 import FotoPerfil from "../../public/images/foto-perfil2.webp";
-import Statics from "@/components/common/Statistics";
+import Statistics from "@/components/common/Statistics";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
           width={200}
           height={200}
         />
-        <Statics />
+        <Statistics />
         <div className="my-8 flex justify-center items-center gap-4">
           <SocialLink
             href="https://github.com/Rodrigo-Fernandez11"
@@ -40,13 +40,10 @@ export default function Home() {
       </div>
       <div className="w-full lg:w-1/2 my-2">
         <h2 className="text-4xl md:text-5xl font-bold">
-          Hello, I am Rodrigo Peña Fernandez. 👋
+          Hola soy Rodrigo Peña Fernandez. 👋
         </h2>
         <div className="mt-8 space-y-4 text-lg md:text-lg">
-          <span className="text-sky-200">
-            Full stack Developer / Blockchain Solidity Engineer / Digital
-            Marketing
-          </span>
+          <span className="text-sky-200">Full stack Developer</span>
           <p>
             <span className="text-yellow-200">
               Curioso, colaborativo y apasionado por el emprendimiento y las

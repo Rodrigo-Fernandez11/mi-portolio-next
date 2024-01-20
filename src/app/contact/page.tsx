@@ -10,12 +10,12 @@ export default function Contact() {
           <div className="max-w-lg mx-auto lg:ml-0 lg:mr-auto lg:max-w-none lg:mt-0">
             <header>
               <h3 className="text-2xl font-semibold pb-4">
-                How can I help you?
+                ¿Te puedo ayudar en algo?
               </h3>
               <p>
-                We re here to assist you and answer any questions you may have.
-                Please fill out the form or contact us through the following
-                methods.
+                Estoy aquí para ayudarte y responder cualquier pregunta que
+                pueda tener. Por favor complete el formulario o a través de lo
+                siguiente médios.
               </p>
             </header>
             <div className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">

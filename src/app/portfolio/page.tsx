@@ -19,7 +19,7 @@ export default function Portfolio() {
         <ProjectCard
           title="Landing Tesla"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "Tailwind CSS"]}
+          techStack={["React", "Vite", "Tailwind CSS"]}
           imageProject={tesla}
           demoLink="https://landing-tesla-ruby-five.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/landing-tesla"
@@ -31,7 +31,7 @@ export default function Portfolio() {
           techStack={[
             "React",
             "React-route",
-            "Vite js",
+            "Vite",
             "Axios",
             "React-Bootstrap",
           ]}
@@ -52,7 +52,7 @@ export default function Portfolio() {
         <ProjectCard
           title="Mercado Pago"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "Node JS"]}
+          techStack={["React", "Vite", "Node JS", "Express JS"]}
           imageProject={mercadoPago}
           demoLink="https://mercado-pago.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/mercado-pago"
@@ -61,7 +61,13 @@ export default function Portfolio() {
         <ProjectCard
           title="Preguntas Anonimas"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["Next JS", "TypeScript", "Supabase", "Tailwind CSS"]}
+          techStack={[
+            "Next JS",
+            "React",
+            "TypeScript",
+            "Supabase",
+            "Tailwind CSS",
+          ]}
           imageProject={preguntas}
           demoLink="https://preguntas-anonimas-akgrow4zg-rodrigo-fernandez11.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/Preguntas-Anonimas"
@@ -70,16 +76,16 @@ export default function Portfolio() {
         <ProjectCard
           title="Widtget clima"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
+          techStack={["React", "Vite", "CSS"]}
           imageProject={clima}
-          demoLink="https://quiet-croissant-5d324a.netlify.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
+          demoLink="https://widget-clima-nine.vercel.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/Widget-clima"
           altProject="Widget clima"
         />
         <ProjectCard
           title="Tic tac toe"
           description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite js", "CSS"]}
+          techStack={["React", "Vite", "CSS"]}
           imageProject={tictac}
           demoLink="https://quiet-croissant-5d324a.netlify.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"

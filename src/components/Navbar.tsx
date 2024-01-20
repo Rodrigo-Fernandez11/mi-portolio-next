@@ -1,28 +1,35 @@
-interface MenuItem {
-  label: string;
-  href: string;
-}
+import Link from "next/link";
 
-const menuItems: MenuItem[] = [
-  { label: "Inicio", href: "/" },
-  { label: "Blog", href: "/blog" },
-  { label: "AboutMe", href: "/aboutMe" },
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "Contacto", href: "/contact" },
-];
-
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <nav className="bg-neutral-900 sticky top-0 bg-opacity-80">
       <div className="container mx-auto flex items-center justify-end p-2">
         <ul className="flex space-x-4">
-          {menuItems.map(({ label, href }, index) => (
-            <li key={index}>
-              <a href={href} className="hover:text-blue-500">
-                {label}
-              </a>
-            </li>
-          ))}
+          <li>
+            <Link className="hover:text-blue-500" href={"/"}>
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-blue-500" href={"/blog"}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-blue-500" href={"/aboutMe"}>
+              Sobre mi
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-blue-500" href={"/portfolio"}>
+              Portafolio
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-blue-500" href={"/contact"}>
+              Contacto
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

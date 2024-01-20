@@ -1,39 +1,42 @@
-export default function Statics () {
-  const stats = [
+interface Statistic {
+  data: number;
+  desc: string;
+}
+
+const Statistics: React.FC = () => {
+  const stats: Statistic[] = [
     {
-      data: "17+",
+      data: 20,
       desc: "Proyectos en GitHub y contribuciones",
     },
     {
-      data: "100+",
-      desc: "Tazas de cafe",
+      data: 2,
+      desc: "Hackatón",
     },
     {
-      data: "4",
-      desc: "Satisfecho con el servicio entregados como Freelance",
+      data: 4,
+      desc: "Clientes satisfechos con el servicio entregado como Freelance",
     },
     {
-      data: "30+",
-      desc: "Eventos de la comunidad",
+      data: 20,
+      desc: "Eventos de la comunidad IT y Blockchain",
     },
   ];
 
   return (
-    <section>
-      <div className="relative z-40 max-w-screen-xl mx-auto">
-        <div className="mt-4">
-          <ul className="flex-wrap gap-x-12 gap-y-10 items-center space-y-8 sm:space-y-0 sm:flex xl:justify-center">
-            {stats.map((item, idx) => (
-              <li key={idx} className="sm:max-w-[15rem]">
-                <h4 className="text-4xl text-white font-semibold">
-                  {item.data}
-                </h4>
-                <p className="mt-3 text-gray-400 font-medium">{item.desc}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </section>
+    <>
+      <section className="max-w-screen-xl mx-auto mt-8">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {stats.map(({ data, desc }, idx) => (
+            <li key={idx} className="max-w-[15rem]">
+              <h4 className="text-4xl font-semibold text-white">{data}</h4>
+              <p className="mt-3 text-gray-400 font-medium">{desc}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </>
   );
 };
+
+export default Statistics;

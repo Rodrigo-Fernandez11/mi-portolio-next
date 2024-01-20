@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface SocialLinkProps {
   href: string;
@@ -6,7 +6,11 @@ interface SocialLinkProps {
   label: string;
 }
 
-export const SocialLink: React.FC<SocialLinkProps> = ({ href, icon, label }) => (
+export const SocialLink: React.FC<SocialLinkProps> = ({
+  href,
+  icon,
+  label,
+}) => (
   <a
     href={href}
     target="_blank"
