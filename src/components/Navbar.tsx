@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-neutral-900 sticky top-0 bg-opacity-80">
+    <nav className="bg-neutral-900 sticky top-0 bg-opacity-90">
       <div className="container mx-auto flex items-center justify-end p-2">
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-3">
           <li>
             <Link className="hover:text-blue-500" href={"/"}>
               Inicio
