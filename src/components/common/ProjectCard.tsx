@@ -35,7 +35,7 @@ const ProjectCard: React.FC<Project> = ({
           </span>
         ))}
       </div>
-      <div className="m-4">
+      <div className="my-4">
         <Image src={imageProject} alt={altProject} width={400} height={400} />
       </div>
       <div className="flex space-x-4">

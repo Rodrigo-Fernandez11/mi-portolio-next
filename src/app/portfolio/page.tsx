@@ -12,22 +12,23 @@ export default function Portfolio() {
   return (
     <section className="py-4 w-full mx-auto sm:px-6 lg:px-8">
       <h2 className="text-3xl text-indigo-700 font-bold flex justify-center">
-        Portfolio
+        Porfolio
       </h2>
       <p></p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <ProjectCard
           title="Landing Tesla"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
+          description="Desarrollé un atractivo Landing Page con Vite, React y Tailwind CSS, destacando la experiencia del usuario y la eficiencia del desarrollo."
           techStack={["React", "Vite", "Tailwind CSS"]}
           imageProject={tesla}
           demoLink="https://landing-tesla-ruby-five.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/landing-tesla"
           altProject="Landing de Tesla"
         />
+
         <ProjectCard
           title="Alkemy challenge"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
+          description="Cree una página web implementando todo lo aprendido con manejo de rutas y rutas privadas, desarrollando el sistema de login. Además, consumí una API con éxito utilizando Axios y para los estilos utilicé React-Bootstrap basándome en la documentación oficial. Completé con éxito el desafío final del programa de Alkemy."
           techStack={[
             "React",
             "React-route",
@@ -40,27 +41,30 @@ export default function Portfolio() {
           githubLink="https://github.com/Rodrigo-Fernandez11/alkemy"
           altProject="Proyecto Alkemy Challenge"
         />
+
         <ProjectCard
           title="CRUD Redux"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
+          description="Desarrollé un eficiente CRUD destacando la gestión avanzada de estados con Redux y la construcción de interfaces interactivas."
           techStack={["React", "TypeScript", "Redux", "CSS"]}
           imageProject={crudRedux}
           demoLink="https://crud-redux-lovat.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/crud-redux"
           altProject="CRUD con Redux"
         />
+
         <ProjectCard
           title="Mercado Pago"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
-          techStack={["React", "Vite", "Node JS", "Express JS"]}
+          description="Integré el servicio de pago de Mercado Pago utilizando su SDK, basándome en la documentación oficial, demostrando habilidades en integración de pagos y desarrollo full-stack."
+          techStack={["React", "CSS", "Vite", "Node JS", "Express JS"]}
           imageProject={mercadoPago}
           demoLink="https://mercado-pago.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/mercado-pago"
           altProject="Pago con Mercado Pago"
         />
+
         <ProjectCard
           title="Preguntas Anonimas"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
+          description="Desarrollé un sistema robusto de preguntas anónimas, destacando un formulario en la parte superior para que los usuarios envíen preguntas. Las preguntas nuevas deberían persistir al refrescar la página. Además, deberíamos ver las preguntas de otros usuarios además de las nuestras."
           techStack={[
             "Next JS",
             "React",
@@ -71,29 +75,32 @@ export default function Portfolio() {
           imageProject={preguntas}
           demoLink="https://preguntas-anonimas-akgrow4zg-rodrigo-fernandez11.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/Preguntas-Anonimas"
-          altProject="Preguntas anonimas"
+          altProject="Preguntas anónimas"
         />
+
         <ProjectCard
           title="Widtget clima"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
+          description="Construí un widget de clima utilizando React, Vite y CSS, para demostrar mis habilidades con el uso de Hooks y CSS vanilla, destacando el correcto consumo de una API."
           techStack={["React", "Vite", "CSS"]}
           imageProject={clima}
           demoLink="https://widget-clima-nine.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/Widget-clima"
           altProject="Widget clima"
         />
+
         <ProjectCard
           title="Tic tac toe"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
+          description="Desarrollé un juego interactivo de Tic Tac Toe poniendo en práctica mi lógica de programación y el uso de hooks de React."
           techStack={["React", "Vite", "CSS"]}
           imageProject={tictac}
           demoLink="https://quiet-croissant-5d324a.netlify.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
-          altProject="Juego tic tac toe crado con React"
+          altProject="Juego tic tac toe creado con React"
         />
+
         <ProjectCard
           title="Calculadora"
-          description="juego de tic tac toe utlizando React y vite js para practicar los hooks y la logica de progrmacion"
+          description="Implementé una calculadora funcional con React y CSS, destacando habilidades en desarrollo de aplicaciones simples y funcionales con uso de componentes y el uso de props."
           techStack={["React", "CSS"]}
           imageProject={calculadora}
           demoLink="https://meek-dango-d621f4.netlify.app/"
