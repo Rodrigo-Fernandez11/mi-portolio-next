@@ -6,27 +6,42 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-end p-2">
         <ul className="flex space-x-3">
           <li>
-            <Link className="hover:text-blue-500" href={"/"}>
+            <Link
+              className="underline decoration-indigo-300 hover:text-indigo-500"
+              href={"/"}
+            >
               Inicio
             </Link>
           </li>
           <li>
-            <Link className="hover:text-blue-500" href={"/blog"}>
+            <Link
+              className="underline decoration-indigo-300 hover:text-indigo-500"
+              href={"/blog"}
+            >
               Blog
             </Link>
           </li>
           <li>
-            <Link className="hover:text-blue-500" href={"/aboutMe"}>
+            <Link
+              className="underline decoration-indigo-300 hover:text-indigo-500"
+              href={"/aboutMe"}
+            >
               Sobre mi
             </Link>
           </li>
           <li>
-            <Link className="hover:text-blue-500" href={"/portfolio"}>
+            <Link
+              className="underline decoration-indigo-300 hover:text-indigo-500"
+              href={"/portfolio"}
+            >
               Portafolio
             </Link>
           </li>
           <li>
-            <Link className="hover:text-blue-500" href={"/contact"}>
+            <Link
+              className="underline decoration-indigo-300 hover:text-indigo-500"
+              href={"/contact"}
+            >
               Contacto
             </Link>
           </li>
