@@ -1,6 +1,6 @@
-import { ContactForm } from "@/components/common/ContactForm";
+import { ContactForm } from "@/app/contact/components/ContactForm";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
-import { ContactMethod } from "@/components/common/ContactMethod";
+import { ContactMethod } from "@/app/contact/components/ContactMethod";
 
 export default function Contact() {
   return (

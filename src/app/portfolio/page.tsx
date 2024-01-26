@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/common/ProjectCard";
+import ProjectCard from "@/app/portfolio/components/ProjectCard";
 import tesla from "../../../public/images/tesla.webp";
 import alkemy from "../../../public/images/alkemy.webp";
 import calculadora from "../../../public/images/calculadora.webp";
@@ -73,8 +73,8 @@ export default function Portfolio() {
             "Tailwind CSS",
           ]}
           imageProject={preguntas}
-          demoLink="https://preguntas-anonimas-akgrow4zg-rodrigo-fernandez11.vercel.app/"
-          githubLink="https://github.com/Rodrigo-Fernandez11/Preguntas-Anonimas"
+          demoLink="https://github.com/Rodrigo-Fernandez11/Preguntas-anonimas"
+          githubLink="preguntas-anonimas-xi.vercel.app"
           altProject="Preguntas anónimas"
         />
 

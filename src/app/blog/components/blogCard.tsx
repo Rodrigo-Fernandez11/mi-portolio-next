@@ -1,16 +1,22 @@
 import Image from "next/image";
-import { StaticImageData } from "next/image"
-import perfi from "../../../public/images/foto-perfil2.webp"
+import { StaticImageData } from "next/image";
+import perfi from "../../../../public/images/foto-perfil2.webp";
 
 interface PropsBlog {
-    img: StaticImageData
-    title: string
-    alt: string
-    date: string
-    desc: string
+  img: StaticImageData;
+  title: string;
+  alt: string;
+  date: string;
+  desc: string;
 }
 
-export const BlogCard: React.FC<PropsBlog> = ({ img, title, alt, date, desc }) => {
+export const BlogCard: React.FC<PropsBlog> = ({
+  img,
+  title,
+  alt,
+  date,
+  desc,
+}) => {
   return (
     <div className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm">
       <Image
@@ -41,4 +47,4 @@ export const BlogCard: React.FC<PropsBlog> = ({ img, title, alt, date, desc }) =
       </div>
     </div>
   );
-}
+};

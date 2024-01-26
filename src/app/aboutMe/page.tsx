@@ -1,4 +1,4 @@
-import { Event } from "@/components/common/Event";
+import { Event } from "@/app/aboutMe/components/Event";
 import { FaGraduationCap, FaUserGraduate, FaHiking } from "react-icons/fa";
 import mindset from "../../../public/mindset.svg";
 

@@ -1,7 +1,7 @@
 export default function ButtonCv() {
   return (
     <a
-      href="https://drive.google.com/file/d/1gE8J6MZGh0KyHQ1PRIK0r1WQR-EmIxyY/view?usp=sharing"
+      href="https://drive.google.com/file/d/15Z26D453k_UTKKQzbxyH1WFK9TSd1sZt/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
     >

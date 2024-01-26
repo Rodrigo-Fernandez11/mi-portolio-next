@@ -1,4 +1,4 @@
-import { BlogCard } from "@/components/common/blogCard";
+import { BlogCard } from "@/app/blog/components/blogCard";
 import talento from "../../../public/images/potencia-talento.webp";
 import basements from "../../../public/images/basements.webp";
 import rocket from "../../../public/images/rocket-base.webp";
