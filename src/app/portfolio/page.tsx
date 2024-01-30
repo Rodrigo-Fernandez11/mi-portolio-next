@@ -7,6 +7,7 @@ import tictac from "../../../public/images/tictac.webp";
 import preguntas from "../../../public/images/preguntas.webp";
 import mercadoPago from "../../../public/images/mercadoPago.webp";
 import crudRedux from "../../../public/images/crudRedux.webp";
+import myRestaurant from "@/../public/images/myRestaurant.webp";
 
 export default function Portfolio() {
   return (
@@ -16,6 +17,16 @@ export default function Portfolio() {
       </h2>
       <p></p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <ProjectCard
+          title="My Restaurant"
+          description="Implementación Next JS y sus caracteristicas como: Metadata, manejo de errores, estado de carga, uso de base de datos, estrategias de renderizado, caching, server action, segmentación de rutas, manejo de los server components, lazy loading, uso del LocalStorage"
+          techStack={["React", "Next JS", "Typescript", "Tailwind CSS"]}
+          imageProject={myRestaurant}
+          demoLink="https://my-restaurant-five-sigma.vercel.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/my-restaurant"
+          altProject="Blog de restaurantes favoritos"
+        />
+
         <ProjectCard
           title="Landing Tesla"
           description="Desarrollé un atractivo Landing Page con Vite, React y Tailwind CSS, destacando la experiencia del usuario y la eficiencia del desarrollo."
