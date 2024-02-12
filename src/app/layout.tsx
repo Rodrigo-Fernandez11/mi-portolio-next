@@ -6,6 +6,20 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Rodrigo peña - Desarrollador Full Stack",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/images/desarrollador.png",
+        href: "/images/desarrollador.png",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/images/desarrollador.png",
+        href: "/images/desarrollador.png",
+      },
+    ],
+  },
   description:
     "Soy un desarrollador Full Stack con experiencia en React, JavaScript, TypeScript, Next.js, Node.js y Tailwind CSS. Descubre mis proyectos y habilidades en mi portafolio.",
   keywords:
