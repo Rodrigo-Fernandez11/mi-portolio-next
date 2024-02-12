@@ -1,4 +1,4 @@
-import ProjectCard from "@/app/portfolio/components/ProjectCard";
+import ProjectCard from "./components/ProjectCard";
 import tesla from "../../../public/images/tesla.webp";
 import alkemy from "../../../public/images/alkemy.webp";
 import calculadora from "../../../public/images/calculadora.webp";
@@ -15,7 +15,6 @@ export default function Portfolio() {
       <h2 className="text-3xl text-indigo-700 font-bold flex justify-center">
         Porfolio
       </h2>
-      <p></p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <ProjectCard
           title="My Restaurant"
@@ -84,8 +83,8 @@ export default function Portfolio() {
             "Tailwind CSS",
           ]}
           imageProject={preguntas}
-          demoLink="https://github.com/Rodrigo-Fernandez11/Preguntas-anonimas"
-          githubLink="preguntas-anonimas-xi.vercel.app"
+          demoLink="https://preguntas-anonimas-xi.vercel.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/Preguntas-anonimas"
           altProject="Preguntas anónimas"
         />
 
