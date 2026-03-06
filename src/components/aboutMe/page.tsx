@@ -98,19 +98,45 @@ export default function AboutMe() {
           <p>
             Soy una persona curiosa e inquieta, me intriga saber cómo funcionan
             las cosas y disfruto formando parte de comunidades donde conecto y
+            aprendo de personas con la misma pasión.
+            <br />
+            <br />
+            En 2022, decidí emprender y capacitarme en el campo que siempre me
+            atrajo: la tecnología. Busqué información y recursos que me llevaron
+            a ser aceptado en la beca de Google en marketing digital. Durante
+            mis estudios, comprendí la importancia de los sitios web, así que
+            comencé a explorar la programación gradualmente, ya que considero
+            que estas dos habilidades se complementan.
+            <br />
+            <br />
+            Posteriormente, me especialicé en lo que más me gustaba, desarrollo
+            web. Investigando una ruta de aprendizaje, simultáneamente culminé
+            mis estudios de marketing digital con la carrera de Coder House para
+            profundizar mis conocimientos.
+            <br />
+            <br />
+            En 2023, me formé como full-stack developer. Aunque continúo
+            aprendiendo, participo activamente en diversas comunidades,
+            hackathones de desarrollo y Blockchain, donde aprendí Solidity para
+            crear aplicaciones descentralizadas. Trabajé en equipo con personas
+            más experimentadas o de otros sectores y comencé a trabajar como
+            freelance para adquirir experiencia.
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-6 mt-10 w-full max-w-screen-lg">
-        {events.map((event, index) => (
-          <Event
-            key={index}
-            icon={event.icon}
-            title={event.title}
-            organization={event.organization}
-            description={event.description}
-          />
-        ))}
+
+      <div className="w-full my-10">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+          {events.map(({ icon, title, organization, description }, index) => (
+            <Event
+              key={index}
+              icon={icon}
+              title={title}
+              organization={organization}
+              description={description}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -12,9 +12,9 @@ import itJoven from "../../../public/images/itjoven.webp";
 
 export default function Blog() {
   return (
-    <section className="max-w-screen-xl p-4 mx-auto mt-4 md:px-8">
-      <h1 className="text-4xl font-bold text-center text-indigo-600 ">Blog</h1>
-      <div className="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-3">
+    <section className="mt-4 mx-auto p-4 max-w-screen-xl md:px-8">
+      <h1 className=" text-center text-4xl font-bold text-indigo-600 ">Blog</h1>
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <BlogCard
           img={talento}
           title="Activa tu talento J.P Morgan x Junior Achievement"

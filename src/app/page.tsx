@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SocialLink } from "@/components/common/SocialLinks";
 import ButtonCv from "@/components/common/ButtonCv";
-import FavoriteTools from "@/components/common/FavoriteTools";
+import FavoriteTools from "@/data/favoriteTools";
 import FotoPerfil from "../../public/images/foto-perfil2.webp";
 import Statistics from "@/components/common/Statistics";
 
@@ -24,11 +24,6 @@ export default function Home() {
             href="https://github.com/Rodrigo-Fernandez11"
             icon={<FaGithub size={30} />}
             label="GitHub"
-          />
-          <SocialLink
-            href="https://twitter.com/RodrigoPeaFern1"
-            icon={<FaTwitter size={30} />}
-            label="Twitter"
           />
           <SocialLink
             href="https://www.linkedin.com/in/rodrigo-frontend-developer/"

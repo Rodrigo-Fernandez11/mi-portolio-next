@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/portfolio/components/ProjectCard";
+import ProjectCard from "./components/ProjectCard";
 import tesla from "../../../public/images/tesla.webp";
 import alkemy from "../../../public/images/alkemy.webp";
 import calculadora from "../../../public/images/calculadora.webp";
@@ -7,7 +7,7 @@ import tictac from "../../../public/images/tictac.webp";
 import preguntas from "../../../public/images/preguntas.webp";
 import mercadoPago from "../../../public/images/mercadoPago.webp";
 import crudRedux from "../../../public/images/crudRedux.webp";
-import myRestaurant from "../../../public/images/myRestaurant.webp";
+import myRestaurant from "@/../public/images/myRestaurant.webp";
 
 export default function Portfolio() {
   return (
@@ -96,6 +96,26 @@ export default function Portfolio() {
           demoLink="https://widget-clima-nine.vercel.app/"
           githubLink="https://github.com/Rodrigo-Fernandez11/Widget-clima"
           altProject="Widget clima"
+        />
+
+        <ProjectCard
+          title="Tic tac toe"
+          description="Desarrollé un juego interactivo de Tic Tac Toe poniendo en práctica mi lógica de programación y el uso de hooks de React."
+          techStack={["React", "Vite", "CSS"]}
+          imageProject={tictac}
+          demoLink="https://quiet-croissant-5d324a.netlify.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/Tic-tac-toe"
+          altProject="Juego tic tac toe creado con React"
+        />
+
+        <ProjectCard
+          title="Calculadora"
+          description="Implementé una calculadora funcional con React y CSS, destacando habilidades en desarrollo de aplicaciones simples y funcionales con uso de componentes y el uso de props."
+          techStack={["React", "CSS"]}
+          imageProject={calculadora}
+          demoLink="https://meek-dango-d621f4.netlify.app/"
+          githubLink="https://github.com/Rodrigo-Fernandez11/calculadora-react"
+          altProject="Calculadora con React"
         />
       </div>
     </section>

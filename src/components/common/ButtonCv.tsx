@@ -1,11 +1,11 @@
 export default function ButtonCv() {
   return (
     <a
-      href="https://drive.google.com/file/d/15Z26D453k_UTKKQzbxyH1WFK9TSd1sZt/view?usp=sharing"
+      href="https://docs.google.com/document/d/1tIF19r3aDEVitlewaPi0m43JQUfO3uJK/edit?usp=sharing&ouid=110751141316493419425&rtpof=true&sd=true"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full block text-center ">
+      <button className="block px-6 py-3 font-bold text-center text-white bg-blue-500 rounded-full hover:bg-blue-600 ">
         Download CV
       </button>
     </a>

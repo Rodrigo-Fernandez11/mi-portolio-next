@@ -1,0 +1,32 @@
+# Robots.txt for https://mi-portolio-next.vercel.app
+User-agent: *
+Allow: /
+
+# Rutas específicas permitidas
+Allow: /
+Allow: /aboutMe
+Allow: /blog
+Allow: /portfolio
+Allow: /contact
+
+# Bloquear rutas privadas si las tienes
+Disallow: /admin
+Disallow: /.next
+Disallow: /api
+Disallow: /private
+
+# Sitemap
+Sitemap: https://mi-portolio-next.vercel.app/sitemap.xml
+
+# Crawl delay (en segundos, opcional)
+Crawl-delay: 1
+Request-rate: 1/1s
+
+# Reglas específicas para bots de búsqueda
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
