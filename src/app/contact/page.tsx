@@ -4,12 +4,12 @@ import { ContactMethod } from "@/components/contact/components/ContactMethod";
 
 export default function Contact() {
   return (
-    <main className="w-full min-h-screen px-6 flex justify-center items-center">
-      <section className="w-full max-w-screen-lg flex flex-col lg:flex-row">
-        <div className="w-full lg:w-1/2 lg:pr-4 my-4">
+    <main className="flex items-center justify-center w-full min-h-screen px-6">
+      <section className="flex flex-col w-full max-w-screen-lg lg:flex-row">
+        <div className="w-full my-4 lg:w-1/2 lg:pr-4">
           <div className="max-w-lg mx-auto lg:ml-0 lg:mr-auto lg:max-w-none lg:mt-0">
             <header>
-              <h3 className="text-2xl font-semibold pb-4">
+              <h3 className="pb-4 text-2xl font-semibold">
                 ¿Te puedo ayudar en algo?
               </h3>
               <p>
@@ -18,7 +18,7 @@ export default function Contact() {
                 siguiente médios.
               </p>
             </header>
-            <div className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
+            <div className="flex flex-wrap items-center mt-6 gap-x-10 gap-y-6">
               <ContactMethod
                 icon={<FaMapMarkerAlt className="text-xl" />}
                 contact="Buenos Aires, Argentina"
@@ -34,7 +34,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:pl-4 lg:mt-0 my-4">
+        <div className="w-full my-4 lg:w-1/2 lg:pl-4 lg:mt-0">
           <div className="max-w-lg mx-auto lg:ml-auto lg:mr-0 lg:max-w-md">
             <ContactForm />
           </div>
