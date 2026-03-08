@@ -14,19 +14,19 @@ export const ContactForm = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_6g8jmzh",
-          "template_g8lj6fe",
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
           form.current,
-          "QUaZ-NoYdehtvPNeP"
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         )
         .then(
           (result) => {
-            console.log(result.text);
+            // Email sent successfully
             setIsSubmitted(true);
             form.current?.reset();
           },
           (error) => {
-            console.log(error.text);
+            // Email failed to send
             setErrorMessage("Failed to send message. Please try again.");
           }
         );

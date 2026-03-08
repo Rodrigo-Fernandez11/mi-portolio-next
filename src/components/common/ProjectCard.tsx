@@ -1,16 +1,6 @@
+import type { Project } from "@/types";
 import { FiGithub, FiFolder } from "react-icons/fi";
 import Image from "next/image";
-import { StaticImageData } from "next/image";
-
-interface Project {
-  title: string;
-  description: string;
-  techStack: string[];
-  imageProject: StaticImageData;
-  demoLink: string;
-  githubLink: string;
-  altProject: string;
-}
 
 export const ProjectCard: React.FC<Project> = ({
   title,

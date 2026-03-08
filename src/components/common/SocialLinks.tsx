@@ -1,10 +1,4 @@
-import { ReactNode } from "react";
-
-interface SocialLinkProps {
-  href: string;
-  icon: ReactNode;
-  label: string;
-}
+import type { SocialLinkProps } from "@/types";
 
 export const SocialLink: React.FC<SocialLinkProps> = ({
   href,

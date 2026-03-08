@@ -1,16 +1,8 @@
+import type { BlogPost } from "@/types";
 import Image from "next/image";
-import { StaticImageData } from "next/image";
 import perfi from "../../../../public/images/foto-perfil2.webp";
 
-interface PropsBlog {
-  img: StaticImageData;
-  title: string;
-  alt: string;
-  date: string;
-  desc: string;
-}
-
-export const BlogCard: React.FC<PropsBlog> = ({
+export const BlogCard: React.FC<BlogPost> = ({
   img,
   title,
   alt,

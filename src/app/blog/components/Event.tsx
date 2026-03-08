@@ -1,9 +1,4 @@
-interface EventProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  organization: string;
-}
+import type { EventProps } from '@/types';
 
 export const Event: React.FC<EventProps> = ({
   icon,

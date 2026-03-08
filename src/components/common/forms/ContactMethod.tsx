@@ -1,9 +1,4 @@
-import { ReactNode } from 'react';
-
-interface ContactMethodProps {
-  icon: ReactNode; // Tipo genérico para cualquier nodo React
-  contact: string;
-}
+import type { ContactMethodProps } from '@/types';
 
 export const ContactMethod: React.FC<ContactMethodProps> = ({ icon, contact }) => {
   return (
