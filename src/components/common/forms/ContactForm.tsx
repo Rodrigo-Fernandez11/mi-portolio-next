@@ -20,12 +20,12 @@ export const ContactForm = () => {
           process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         )
         .then(
-          (result) => {
+          (_result) => {
             // Email sent successfully
             setIsSubmitted(true);
             form.current?.reset();
           },
-          (error) => {
+          (_error) => {
             // Email failed to send
             setErrorMessage("Failed to send message. Please try again.");
           }

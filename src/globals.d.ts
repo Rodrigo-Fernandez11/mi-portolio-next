@@ -1,28 +1,30 @@
 // Declaraciones de tipos globales para el proyecto
 
 // Soporte para imports de imágenes
+import type { StaticImageData } from "next/image";
+
 declare module "*.png" {
-  const value: import("next/image").StaticImageData;
+  const value: StaticImageData;
   export default value;
 }
 
 declare module "*.jpg" {
-  const value: import("next/image").StaticImageData;
+  const value: StaticImageData;
   export default value;
 }
 
 declare module "*.jpeg" {
-  const value: import("next/image").StaticImageData;
+  const value: StaticImageData;
   export default value;
 }
 
 declare module "*.webp" {
-  const value: import("next/image").StaticImageData;
+  const value: StaticImageData;
   export default value;
 }
 
 declare module "*.svg" {
-  const value: import("next/image").StaticImageData;
+  const value: StaticImageData;
   export default value;
 }
 
