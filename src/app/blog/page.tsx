@@ -1,4 +1,5 @@
-import { BlogCard } from "@/components/blog/components/blogCard";
+import type { Metadata } from "next";
+import { BlogCard } from "@/components";
 import talento from "../../../public/images/potencia-talento.webp";
 import basements from "../../../public/images/basements.webp";
 import rocket from "../../../public/images/rocket-base.webp";
@@ -9,6 +10,26 @@ import telecom from "../../../public/images/telecomreact-1.webp";
 import expoJoven from "../../../public/images/expojovenes.webp";
 import modoReact from "../../../public/images/modoreact-1.webp";
 import itJoven from "../../../public/images/itjoven.webp";
+
+export const metadata: Metadata = {
+  title: "Blog - Rodrigo Pena",
+  description:
+    "Lee articulos sobre desarrollo web, React, Next.js, y otras tecnologias de la industria.",
+  openGraph: {
+    title: "Blog - Rodrigo Pena",
+    description:
+      "Articulos sobre desarrollo full stack y mejores practicas en programacion.",
+    url: "https://mi-portolio-next.vercel.app/blog",
+    type: "website",
+    images: [
+      {
+        url: "https://mi-portolio-next.vercel.app/images/desarrollador.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function Blog() {
   return (

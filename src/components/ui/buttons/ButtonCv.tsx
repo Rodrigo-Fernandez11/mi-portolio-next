@@ -1,4 +1,4 @@
-export default function ButtonCv() {
+export function ButtonCv() {
   return (
     <a
       href="https://docs.google.com/document/d/1tIF19r3aDEVitlewaPi0m43JQUfO3uJK/edit?usp=sharing&ouid=110751141316493419425&rtpof=true&sd=true"

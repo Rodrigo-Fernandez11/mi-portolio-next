@@ -3,7 +3,7 @@ interface Statistic {
   desc: string;
 }
 
-const Statistics: React.FC = () => {
+export const Statistics: React.FC = () => {
   const stats: Statistic[] = [
     {
       data: 20,
@@ -38,5 +38,3 @@ const Statistics: React.FC = () => {
     </>
   );
 };
-
-export default Statistics;

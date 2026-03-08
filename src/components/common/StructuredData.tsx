@@ -1,5 +1,3 @@
-import { Metadata } from 'next';
-
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -24,13 +22,7 @@ const jsonLd = {
   ],
 };
 
-export const metadata: Metadata = {
-  title: 'Rodrigo Peña - Desarrollador Full Stack | React, Next.js, Node.js',
-  description:
-    'Soy un desarrollador Full Stack con experiencia en React, JavaScript, TypeScript, Next.js, Node.js y Tailwind CSS. Descubre mis proyectos y habilidades en mi portafolio profesional.',
-};
-
-export default function StructuredData() {
+export function StructuredData() {
   return (
     <script
       type="application/ld+json"

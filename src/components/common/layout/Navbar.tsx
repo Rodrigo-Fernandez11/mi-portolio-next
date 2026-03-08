@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <nav className="bg-neutral-900 sticky top-0 bg-opacity-90">
       <div className="container mx-auto flex items-center justify-end p-2">
@@ -50,5 +50,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

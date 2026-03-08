@@ -1,6 +1,26 @@
-import { ContactForm } from "@/components/contact/components/ContactForm";
+import type { Metadata } from "next";
+import { ContactForm, ContactMethod } from "@/components";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
-import { ContactMethod } from "@/components/contact/components/ContactMethod";
+
+export const metadata: Metadata = {
+  title: "Contacto - Rodrigo Pena",
+  description:
+    "Quieres trabajar conmigo o tienes preguntas? Ponte en contacto a traves del formulario.",
+  openGraph: {
+    title: "Contacto - Rodrigo Pena",
+    description:
+      "Formulario de contacto para proyectos, propuestas o consultas.",
+    url: "https://mi-portolio-next.vercel.app/contact",
+    type: "website",
+    images: [
+      {
+        url: "https://mi-portolio-next.vercel.app/images/desarrollador.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function Contact() {
   return (

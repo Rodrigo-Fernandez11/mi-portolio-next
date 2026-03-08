@@ -1,11 +1,11 @@
+import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import StructuredData from "@/components/StructuredData";
+import { Navbar, StructuredData } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Rodrigo Peña - Desarrollador Full Stack | React, Next.js, Node.js",
   description:
     "Soy un desarrollador Full Stack con experiencia en React, JavaScript, TypeScript, Next.js, Node.js y Tailwind CSS. Descubre mis proyectos y habilidades en mi portafolio profesional.",
@@ -50,7 +50,7 @@ export const metadata = {
   
   // Idioma y región
   alternates: {
-    canonical: "https://tudominio.com",
+    canonical: "https://mi-portolio-next.vercel.app",
     languages: {
       "es-ES": "https://mi-portolio-next.vercel.app",
     },
@@ -63,9 +63,9 @@ export const metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxSnippet: -1,
-      maxImagePreview: "large",
-      maxVideoPreview: -1,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
     },
   },
 

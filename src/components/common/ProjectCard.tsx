@@ -12,7 +12,7 @@ interface Project {
   altProject: string;
 }
 
-const ProjectCard: React.FC<Project> = ({
+export const ProjectCard: React.FC<Project> = ({
   title,
   description,
   techStack,
@@ -59,5 +59,3 @@ const ProjectCard: React.FC<Project> = ({
     </div>
   );
 };
-
-export default ProjectCard;

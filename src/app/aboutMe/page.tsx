@@ -1,4 +1,5 @@
-import { Event } from "@/components/aboutMe/components/Event";
+import type { Metadata } from "next";
+import { Event } from "@/app/blog/components";
 import { FaGraduationCap, FaUserGraduate, FaHiking } from "react-icons/fa";
 import mindset from "../../../public/mindset.svg";
 
@@ -11,6 +12,26 @@ import {
   SiGoogleanalytics,
 } from "react-icons/si";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Sobre Mi - Rodrigo Pena",
+  description:
+    "Conoce mas sobre Rodrigo Pena, desarrollador Full Stack con pasion por crear aplicaciones web modernas y eficientes.",
+  openGraph: {
+    title: "Sobre Mi - Rodrigo Pena",
+    description:
+      "Desarrollador Full Stack con experiencia en React, Next.js, Node.js y mas.",
+    url: "https://mi-portolio-next.vercel.app/aboutMe",
+    type: "website",
+    images: [
+      {
+        url: "https://mi-portolio-next.vercel.app/images/desarrollador.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function AboutMe() {
   const events = [

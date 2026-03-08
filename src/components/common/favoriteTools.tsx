@@ -25,7 +25,7 @@ import {
   SiNestjs,
 } from "react-icons/si";
 
-const FavoriteTools: React.FC = () => {
+export const FavoriteTools: React.FC = () => {
   return (
     <div className="py-4">
       <p className="my-2">Tecnologías de Frontend:</p>
@@ -65,5 +65,3 @@ const FavoriteTools: React.FC = () => {
     </div>
   );
 };
-
-export default FavoriteTools;

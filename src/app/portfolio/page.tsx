@@ -1,4 +1,5 @@
-import ProjectCard from "@/components/portfolio/components/ProjectCard";
+import type { Metadata } from "next";
+import { ProjectCard } from "@/components";
 import tesla from "../../../public/images/tesla.webp";
 import alkemy from "../../../public/images/alkemy.webp";
 import calculadora from "../../../public/images/calculadora.webp";
@@ -8,6 +9,25 @@ import preguntas from "../../../public/images/preguntas.webp";
 import mercadoPago from "../../../public/images/mercadoPago.webp";
 import crudRedux from "../../../public/images/crudRedux.webp";
 import myRestaurant from "../../../public/images/myRestaurant.webp";
+
+export const metadata: Metadata = {
+  title: "Portafolio - Rodrigo Pena",
+  description:
+    "Explora mis proyectos destacados como desarrollador Full Stack. Proyectos en React, Next.js, Node.js y mas tecnologias modernas.",
+  openGraph: {
+    title: "Portafolio - Rodrigo Pena",
+    description: "Proyectos profesionales de desarrollo web y aplicaciones full stack.",
+    url: "https://mi-portolio-next.vercel.app/portfolio",
+    type: "website",
+    images: [
+      {
+        url: "https://mi-portolio-next.vercel.app/images/desarrollador.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+};
 
 export default function Portfolio() {
   return (

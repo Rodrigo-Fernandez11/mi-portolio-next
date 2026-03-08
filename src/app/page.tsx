@@ -1,10 +1,7 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SocialLink } from "@/components/common/SocialLinks";
-import ButtonCv from "@/components/common/ButtonCv";
-import FavoriteTools from "@/data/favoriteTools";
+import { ButtonCv, FavoriteTools, SocialLink, Statistics } from "@/components";
 import FotoPerfil from "../../public/images/foto-perfil2.webp";
-import Statistics from "@/components/common/Statistics";
 
 export default function Home() {
   return (
