@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { BlogCard } from "@/components";
+import { ActionLink, SectionBadge, TagList } from "@/components";
+import { BlogCard } from "./components";
 import type { StaticImageData } from "next/image";
 import talento from "../../../public/images/potencia-talento.webp";
 import basements from "../../../public/images/basements.webp";
@@ -114,6 +115,12 @@ const posts: PostItem[] = [
 ];
 
 export default function Blog() {
+  const blogTags = [
+    "10 publicaciones",
+    "React Buenos Aires",
+    "Hackathons & Networking",
+  ];
+
   return (
     <section className="relative overflow-hidden">
       <div className="pointer-events-none absolute left-[-120px] top-[-140px] h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
@@ -121,9 +128,10 @@ export default function Blog() {
 
       <div className="mx-auto max-w-7xl px-4 pb-12 pt-10 md:px-8 lg:pb-16 lg:pt-14">
         <header className="mb-10 rounded-3xl border border-gray-800 bg-gradient-to-br from-gray-950 via-gray-950 to-blue-950/30 p-4 sm:p-6 lg:p-10">
-          <p className="mb-3 inline-flex rounded-full border border-cyan-400/40 bg-cyan-500/10 px-2.5 py-1 sm:px-3 sm:py-1 text-xs font-semibold uppercase tracking-wider text-cyan-300">
-            Bitacora de aprendizaje
-          </p>
+          <SectionBadge
+            text="Bitacora de aprendizaje"
+            className="mb-3 inline-flex border border-cyan-400/40 bg-cyan-500/10 uppercase tracking-wider text-cyan-300"
+          />
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight text-white lg:text-5xl xl:text-6xl">
             Blog de comunidad, eventos y crecimiento profesional
           </h1>
@@ -131,11 +139,7 @@ export default function Blog() {
             Un recorrido por meetups, hackathons y experiencias reales que
             potenciaron mi camino como desarrollador Full Stack.
           </p>
-          <div className="mt-6 flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm text-gray-300">
-            <span className="rounded-full border border-gray-700 bg-black/50 px-3 py-1.5">10 publicaciones</span>
-            <span className="rounded-full border border-gray-700 bg-black/50 px-3 py-1.5">React Buenos Aires</span>
-            <span className="rounded-full border border-gray-700 bg-black/50 px-3 py-1.5">Hackathons & Networking</span>
-          </div>
+          <TagList tags={blogTags} className="mt-6 gap-2 sm:gap-3" />
         </header>
 
         <div className="mb-8 flex items-center justify-between">
@@ -167,18 +171,16 @@ export default function Blog() {
           
           {/* Mini CTA */}
           <div className="mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-            <a
+            <ActionLink
               href="/aboutMe"
-              className="rounded-lg border border-cyan-500/50 bg-cyan-500/10 px-5 py-2 text-sm font-medium text-cyan-400 transition-all duration-300 hover:border-cyan-500 hover:bg-cyan-500/20"
+              variant="primary"
+              className="border-cyan-500/50 bg-cyan-500/10 text-cyan-400 hover:border-cyan-500 hover:bg-cyan-500/20"
             >
               Conocé mi historia
-            </a>
-            <a
-              href="/portfolio"
-              className="rounded-lg border border-gray-700 bg-gray-900/50 px-5 py-2 text-sm font-medium text-gray-300 transition-all duration-300 hover:border-gray-600 hover:bg-gray-900 hover:text-white"
-            >
+            </ActionLink>
+            <ActionLink href="/portfolio" variant="secondary">
               Ver proyectos
-            </a>
+            </ActionLink>
           </div>
         </div>
       </div>

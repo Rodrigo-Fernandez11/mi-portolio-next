@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ProjectCard } from "@/components";
+import { CtaPanel, ProjectCard, SectionBadge, SectionTitle, TagList } from "@/components";
 import { FaRocket, FaCode, FaLaptopCode } from "react-icons/fa";
 import tesla from "../../../public/images/tesla.webp";
 import alkemy from "../../../public/images/alkemy.webp";
@@ -29,6 +29,14 @@ export const metadata: Metadata = {
 };
 
 export default function Portfolio() {
+  const portfolioTags = [
+    "React & Next.js",
+    "TypeScript",
+    "Node.js",
+    "Integración de APIs",
+    "Supabase",
+  ];
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Background effects */}
@@ -39,9 +47,10 @@ export default function Portfolio() {
         {/* Hero Section */}
         <header className="mb-10 sm:mb-12 text-center">
           <div className="mb-4 inline-block">
-            <span className="animate-pulse rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-3 py-1.5 sm:px-4 text-xs sm:text-sm font-semibold text-white">
-              Mis proyectos
-            </span>
+            <SectionBadge
+              text="Mis proyectos"
+              className="animate-pulse bg-gradient-to-r from-purple-500 to-blue-500"
+            />
           </div>
           
           <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-6xl">
@@ -85,30 +94,16 @@ export default function Portfolio() {
           </div>
 
           {/* Technologies badges */}
-          <div className="flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm">
-            <span className="rounded-full border border-gray-700 bg-black/50 px-2.5 py-1 sm:px-3 sm:py-1.5 text-gray-300">
-              React & Next.js
-            </span>
-            <span className="rounded-full border border-gray-700 bg-black/50 px-2.5 py-1 sm:px-3 sm:py-1.5 text-gray-300">
-              TypeScript
-            </span>
-            <span className="rounded-full border border-gray-700 bg-black/50 px-2.5 py-1 sm:px-3 sm:py-1.5 text-gray-300">
-              Node.js
-            </span>
-            <span className="rounded-full border border-gray-700 bg-black/50 px-2.5 py-1 sm:px-3 sm:py-1.5 text-gray-300">
-              Integración de APIs
-            </span>
-            <span className="rounded-full border border-gray-700 bg-black/50 px-2.5 py-1 sm:px-3 sm:py-1.5 text-gray-300">
-              Supabase
-            </span>
-          </div>
+          <TagList tags={portfolioTags} className="justify-center" />
         </header>
 
         {/* Projects Grid */}
         <div className="mb-12 sm:mb-16">
-          <h2 className="mb-6 sm:mb-8 text-xl sm:text-2xl font-bold text-white md:text-3xl">
-            Proyectos destacados
-          </h2>
+          <SectionTitle
+            title="Proyectos destacados"
+            className="mb-6 sm:mb-8"
+            titleClassName="mb-0 text-xl sm:text-2xl md:text-3xl"
+          />
           
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <ProjectCard
@@ -197,22 +192,18 @@ export default function Portfolio() {
 
         {/* CTA Section */}
         <div className="mx-auto max-w-4xl">
-          <div className="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-blue-950/50 via-purple-950/30 to-gray-950 p-6 sm:p-8 lg:p-12">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5" />
-            
-            <div className="relative text-center">
-              <FaRocket className="mx-auto mb-4 sm:mb-6 text-4xl sm:text-5xl text-purple-400" />
-              <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-bold text-white lg:text-4xl">
-                ¿Te gustó lo que viste?
-              </h2>
-              <p className="mx-auto mb-6 sm:mb-8 max-w-2xl text-base sm:text-lg text-gray-300">
-                Estos proyectos representan mi pasión por crear soluciones reales. Si tenés una idea o proyecto en mente, charlemos.
-              </p>
-              
-              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+          <CtaPanel
+            icon={<FaRocket className="mx-auto mb-4 text-4xl text-purple-400 sm:mb-6 sm:text-5xl" />}
+            title="¿Te gustó lo que viste?"
+            description="Estos proyectos representan mi pasión por crear soluciones reales. Si tenés una idea o proyecto en mente, charlemos."
+            containerClassName="bg-gradient-to-br from-blue-950/50 via-purple-950/30 to-gray-950"
+            backgroundLayer={<div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5" />}
+            actionsClassName="flex flex-wrap items-center justify-center gap-3 sm:gap-4"
+            actions={
+              <>
                 <a
                   href="/aboutMe"
-                  className="rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50"
+                  className="rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50 sm:px-8 sm:py-3 sm:text-base"
                 >
                   Conocé más sobre mí
                 </a>
@@ -220,13 +211,13 @@ export default function Portfolio() {
                   href="https://github.com/Rodrigo-Fernandez11"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-gray-700 bg-gray-900/50 px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all duration-300 hover:border-gray-600 hover:bg-gray-900"
+                  className="rounded-full border border-gray-700 bg-gray-900/50 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:border-gray-600 hover:bg-gray-900 sm:px-8 sm:py-3 sm:text-base"
                 >
                   Ver más en GitHub
                 </a>
-              </div>
-            </div>
-          </div>
+              </>
+            }
+          />
         </div>
       </section>
     </div>

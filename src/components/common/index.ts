@@ -1,4 +1,5 @@
 export * from "./favoriteTools";
+export * from "./CtaPanel";
 export * from "./ProjectCard";
 export * from "./SocialLinks";
 export * from "./Statistics";

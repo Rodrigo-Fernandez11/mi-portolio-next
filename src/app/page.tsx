@@ -1,6 +1,13 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { ButtonCv, FavoriteTools, SocialLink, Statistics } from "@/components";
+import {
+  ActionLink,
+  FavoriteTools,
+  SectionBadge,
+  SocialLink,
+  Statistics,
+} from "@/components";
+import { ButtonCv } from "./components";
 import FotoPerfil from "../../public/images/foto-perfil2.webp";
 
 export default function Home() {
@@ -74,9 +81,10 @@ export default function Home() {
 
           {/* Badge */}
           <div className="mb-6">
-            <span className="inline-flex items-center rounded-full border border-gray-700 bg-gray-900/50 px-4 py-2 text-sm font-semibold text-white sm:text-base">
-              Full Stack Developer
-            </span>
+            <SectionBadge
+              text="Full Stack Developer"
+              className="inline-flex items-center border border-gray-700 bg-gray-900/50"
+            />
           </div>
 
           {/* Description */}
@@ -105,18 +113,20 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-            <a
+            <ActionLink
               href="/portfolio"
-              className="rounded-lg border border-blue-500/50 bg-blue-500/10 px-6 py-2.5 text-sm font-medium text-blue-400 transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/20 sm:px-7 sm:text-base"
+              variant="primary"
+              className="hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 sm:px-7 sm:text-base"
             >
               Ver mis proyectos
-            </a>
-            <a
+            </ActionLink>
+            <ActionLink
               href="/aboutMe"
-              className="rounded-lg border border-gray-700 bg-gray-900/50 px-6 py-2.5 text-sm font-medium text-gray-300 transition-all duration-300 hover:scale-105 hover:border-gray-600 hover:bg-gray-900 hover:text-white sm:px-7 sm:text-base"
+              variant="secondary"
+              className="hover:scale-105 sm:px-7 sm:text-base"
             >
               Conocer más
-            </a>
+            </ActionLink>
           </div>
         </main>
       </section>

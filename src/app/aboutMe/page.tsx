@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FaGraduationCap, FaCode, FaRocket, FaUsers, FaLightbulb, FaHeart } from "react-icons/fa";
+import { CtaPanel, SectionBadge, SectionTitle } from "@/components";
 import {
   SiGoogle,
   SiFreecodecamp,
@@ -135,9 +136,10 @@ export default function AboutMe() {
           <div className="flex flex-col items-center gap-8 sm:gap-10 lg:flex-row lg:items-start">
             <div className="flex-1 space-y-4 sm:space-y-6 text-center lg:text-left">
               <div className="inline-block">
-                <span className="animate-pulse rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-3 py-1.5 sm:px-4 text-xs sm:text-sm font-semibold text-white">
-                  Sobre mí
-                </span>
+                <SectionBadge
+                  text="Sobre mí"
+                  className="animate-pulse bg-gradient-to-r from-blue-500 to-purple-500"
+                />
               </div>
               
               <h1 className="text-3xl sm:text-4xl font-bold leading-tight text-white md:text-5xl xl:text-6xl">
@@ -199,14 +201,11 @@ export default function AboutMe() {
       {/* Values Section */}
       <section className="px-4 py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-8 sm:mb-12 text-center">
-            <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-bold text-white lg:text-4xl">
-              Mi filosofía de trabajo
-            </h2>
-            <p className="text-base sm:text-lg text-gray-400">
-              Los valores que guían mi desarrollo profesional
-            </p>
-          </div>
+          <SectionTitle
+            title="Mi filosofía de trabajo"
+            description="Los valores que guían mi desarrollo profesional"
+            className="mb-8 text-center sm:mb-12"
+          />
 
           <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((value, index) => (
@@ -251,14 +250,11 @@ export default function AboutMe() {
       {/* Timeline Section */}
       <section className="px-4 py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-12 sm:mb-16 text-center">
-            <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-bold text-white lg:text-4xl">
-              Mi trayectoria
-            </h2>
-            <p className="text-base sm:text-lg text-gray-400">
-              El camino que me trajo hasta aquí
-            </p>
-          </div>
+          <SectionTitle
+            title="Mi trayectoria"
+            description="El camino que me trajo hasta aquí"
+            className="mb-12 text-center sm:mb-16"
+          />
 
           <div className="relative space-y-6 sm:space-y-8">
             {/* Timeline vertical line */}
@@ -321,51 +317,46 @@ export default function AboutMe() {
       {/* CTA Section */}
       <section className="px-4 py-16 lg:py-20">
         <div className="mx-auto max-w-4xl">
-          <div className="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-blue-950/50 to-purple-950/50 p-6 sm:p-8 lg:p-12">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10" />
-            
-            <div className="relative text-center">
-              <FaCode className="mx-auto mb-6 text-4xl sm:text-5xl text-blue-400" />
-              <h2 className="mb-4 text-2xl sm:text-3xl font-bold text-white lg:text-4xl">
-                ¿Trabajemos juntos?
-              </h2>
-              <p className="mb-6 sm:mb-8 text-base sm:text-lg text-gray-300">
-                Siempre estoy abierto a nuevos proyectos, colaboraciones o simplemente
-                charlar sobre tecnología. ¡Conectemos!
-              </p>
-              
-              {/* Botones principales */}
-              <div className="mb-6 sm:mb-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+          <CtaPanel
+            icon={<FaCode className="mx-auto mb-6 text-4xl text-blue-400 sm:text-5xl" />}
+            title="¿Trabajemos juntos?"
+            description="Siempre estoy abierto a nuevos proyectos, colaboraciones o simplemente charlar sobre tecnología. ¡Conectemos!"
+            containerClassName="bg-gradient-to-br from-blue-950/50 to-purple-950/50"
+            backgroundLayer={<div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10" />}
+            actionsClassName="mb-6 flex flex-wrap items-center justify-center gap-3 sm:mb-8 sm:gap-4"
+            actions={
+              <>
                 <CopyEmailButton />
                 <a
                   href="https://wa.me/5491123018269?text=Hola%20Rodrigo,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-green-600 bg-green-600/20 px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all duration-300 hover:border-green-500 hover:bg-green-600/30"
+                  className="rounded-full border border-green-600 bg-green-600/20 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:border-green-500 hover:bg-green-600/30 sm:px-8 sm:py-3 sm:text-base"
                   aria-label="Contactar por WhatsApp"
                 >
                   WhatsApp
                 </a>
                 <a
                   href="/portfolio"
-                  className="rounded-full border border-gray-700 bg-gray-900/50 px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all duration-300 hover:border-gray-600 hover:bg-gray-900"
+                  className="rounded-full border border-gray-700 bg-gray-900/50 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:border-gray-600 hover:bg-gray-900 sm:px-8 sm:py-3 sm:text-base"
                   aria-label="Ver portfolio de proyectos"
                 >
                   Ver proyectos
                 </a>
-              </div>
-
-              {/* Información de contacto */}
-              <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-400">
+              </>
+            }
+            footerClassName="space-y-1 text-xs text-gray-400 sm:space-y-2 sm:text-sm"
+            footer={
+              <>
                 <p>
                   <span className="font-medium text-gray-300">Email:</span> rodrip602@gmail.com
                 </p>
                 <p>
                   <span className="font-medium text-gray-300">Ubicación:</span> Buenos Aires, Argentina
                 </p>
-              </div>
-            </div>
-          </div>
+              </>
+            }
+          />
         </div>
       </section>
     </div>

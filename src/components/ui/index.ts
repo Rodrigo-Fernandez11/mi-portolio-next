@@ -1,2 +1,2 @@
 export * from "./buttons/index";
-export * from "./cards/index";
+export * from "./content/index";
