@@ -7,7 +7,7 @@ export const Navbar = () => {
         <ul className="flex items-center gap-8 md:gap-12">
           <li>
             <Link
-              className="relative font-medium text-white text-sm md:text-base transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
+              className="relative font-medium text-white text-base md:text-lg transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
               href={"/"}
             >
               Inicio
@@ -16,7 +16,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              className="relative font-medium text-white text-sm md:text-base transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
+              className="relative font-medium text-white text-base md:text-lg transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
               href={"/blog"}
             >
               Blog
@@ -25,7 +25,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              className="relative font-medium text-white text-sm md:text-base transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
+              className="relative font-medium text-white text-base md:text-lg transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
               href={"/aboutMe"}
             >
               Sobre mí
@@ -34,7 +34,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              className="relative font-medium text-white text-sm md:text-base transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
+              className="relative font-medium text-white text-base md:text-lg transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
               href={"/portfolio"}
             >
               Portafolio

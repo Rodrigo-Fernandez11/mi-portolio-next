@@ -29,11 +29,11 @@ export const metadata: Metadata = {
 
 export default function Portfolio() {
   return (
-    <section className="py-4 w-full mx-auto sm:px-6 lg:px-8">
-      <h2 className="text-3xl text-white font-bold flex justify-center">
-        Porfolio
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <section className="py-8 px-4 w-full max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <h1 className="text-4xl md:text-5xl text-white font-bold text-center mb-12">
+        Portfolio
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
           title="My Restaurant"
           description="Implementación Next JS y sus caracteristicas como: Metadata, manejo de errores, estado de carga, uso de base de datos, estrategias de renderizado, caching, server action, segmentación de rutas, manejo de los server components, lazy loading, uso del LocalStorage"

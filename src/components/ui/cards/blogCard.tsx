@@ -29,13 +29,13 @@ export const BlogCard: React.FC<BlogPost> = ({
           />
         </div>
         <div className="ml-3">
-          <span className="block">Rodri</span>
+          <span className="block font-medium">Rodri</span>
           <span className="block text-gray-500 text-sm">{date}</span>
         </div>
       </div>
       <div className="pt-3 ml-4 mr-2 mb-3">
-        <h3 className="text-xl">{title}</h3>
-        <p className="text-sm mt-4 text-gray-400">{desc}</p>
+        <h3 className="text-xl md:text-2xl font-semibold mb-3">{title}</h3>
+        <p className="text-base leading-relaxed text-gray-400">{desc}</p>
       </div>
     </div>
   );

@@ -1,40 +1,48 @@
 interface Statistic {
-  data: number;
-  desc: string;
+  value: string;
+  label: string;
+  note: string;
 }
 
 export const Statistics: React.FC = () => {
   const stats: Statistic[] = [
     {
-      data: 20,
-      desc: "Proyectos en GitHub y contribuciones",
+      value: "15+",
+      label: "Proyectos Full Stack finalizados",
+      note: "Apps reales con backend, base de datos y deploy.",
     },
     {
-      data: 2,
-      desc: "Hackatón",
+      value: "40%",
+      label: "Ingenieria Informatica",
+      note: "Base tecnica solida en progreso academico.",
     },
     {
-      data: 4,
-      desc: "Clientes satisfechos con el servicio entregado como Freelance",
-    },
-    {
-      data: 20,
-      desc: "Eventos de la comunidad IT y Blockchain",
+      value: "12",
+      label: "Eventos y meetups IT",
+      note: "Aprendizaje continuo y networking activo.",
     },
   ];
 
   return (
-    <>
-      <section className="max-w-screen-xl mx-auto mt-8">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats.map(({ data, desc }, idx) => (
-            <li key={idx} className="max-w-[15rem]">
-              <h4 className="text-4xl font-semibold text-white">{data}</h4>
-              <p className="mt-3 text-gray-500 font-medium">{desc}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </>
+    <section className="w-full">
+      <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">
+        Mis estadisticas clave
+      </h3>
+      <p className="mb-5 text-base text-gray-400">Impacto medible y crecimiento profesional.</p>
+
+      <ul className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+        {stats.map(({ value, label, note }, idx) => (
+          <li
+            key={label}
+            className="min-w-0 p-4 transition-all duration-300 border border-gray-800 animate-fade-up rounded-xl bg-black/50 hover:-translate-y-1 hover:border-gray-600 hover:shadow-lg"
+            style={{ animationDelay: `${idx * 0.08}s` }}
+          >
+            <p className="text-3xl font-semibold leading-none text-white">{value}</p>
+            <h4 className="mt-2 text-sm font-semibold leading-snug text-gray-200">{label}</h4>
+            <p className="mt-2 text-xs leading-relaxed text-gray-500">{note}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };

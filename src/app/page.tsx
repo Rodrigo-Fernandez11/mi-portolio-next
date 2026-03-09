@@ -5,18 +5,20 @@ import FotoPerfil from "../../public/images/foto-perfil2.webp";
 
 export default function Home() {
   return (
-    <section className="min-h-screen p-5 flex flex-col lg:flex-row justify-center items-center">
-      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center mb-4 animate-fade-up">
+    <section className="mx-auto flex min-h-[calc(100vh-72px)] w-full max-w-6xl flex-col gap-8 px-4 py-5 lg:flex-row lg:items-start lg:gap-10">
+      <div className="animate-fade-up flex w-full flex-col items-center lg:w-[42%] lg:items-start">
         <Image
           src={FotoPerfil}
           alt="foto perfil rodrigo peña"
           priority
-          className="rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg"
+          className="h-36 w-36 rounded-full border border-gray-800 object-cover transition-all duration-300 hover:scale-105 hover:shadow-lg sm:h-44 sm:w-44"
           width={200}
           height={200}
         />
-        <Statistics />
-        <div className="my-8 flex justify-center items-center gap-4">
+        <div className="mt-5 w-full">
+          <Statistics />
+        </div>
+        <div className="my-5 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
           <SocialLink
             href="https://github.com/Rodrigo-Fernandez11"
             icon={<FaGithub size={30} />}
@@ -30,14 +32,19 @@ export default function Home() {
           <ButtonCv />
         </div>
       </div>
-      <div className="w-full lg:w-1/2 my-2 animate-fade-up" style={{animationDelay: "0.1s"}}>
-        <h2 className="text-4xl md:text-5xl font-bold transition-all duration-300">
+      <div
+        className="animate-fade-up w-full lg:w-[58%]"
+        style={{ animationDelay: "0.1s" }}
+      >
+        <h1 className="text-4xl font-bold leading-tight transition-all duration-300 sm:text-5xl lg:text-[3rem] xl:text-[3.5rem]">
           Hola soy Rodrigo Peña Fernandez. 👋
-        </h2>
-        <div className="mt-8 space-y-4 text-lg md:text-lg text-gray-300">
-          <span className="text-white font-semibold">Full stack Developer</span>
-          <p>
-            <span className="text-white">
+        </h1>
+        <div className="mt-5 space-y-4">
+          <span className="inline-flex px-4 py-2 text-base font-semibold text-white border border-gray-700 rounded-full">
+            Full Stack Developer
+          </span>
+          <p className="max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">
+            <span className="text-white font-medium">
               Curioso, colaborativo y apasionado por el emprendimiento y las
               comunidades IT
             </span>
@@ -46,8 +53,10 @@ export default function Home() {
             Solidity. Además, cuento con experiencia en marketing digital, estas
             habilidades las he aplicado y demostrado en proyectos personales,
             freelance y en mi participación en diversas comunidades y
-            hackathons.”
+            hackathons.
           </p>
+        </div>
+        <div className="mt-6">
           <FavoriteTools />
         </div>
       </div>
