@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import { env } from "@/lib/env";
+import { getEmailJsEnv } from "@/lib/env";
 
 export const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -11,14 +11,20 @@ export const ContactForm = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const emailJsEnv = getEmailJsEnv();
+
+    if (!emailJsEnv) {
+      setErrorMessage("Contact form is unavailable right now. Please try again later.");
+      return;
+    }
 
     if (form.current) {
       emailjs
         .sendForm(
-          env.emailjs.serviceId,
-          env.emailjs.templateId,
+          emailJsEnv.serviceId,
+          emailJsEnv.templateId,
           form.current,
-          env.emailjs.publicKey
+          emailJsEnv.publicKey
         )
         .then(
           (_result) => {

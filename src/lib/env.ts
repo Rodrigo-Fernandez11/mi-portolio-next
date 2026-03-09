@@ -1,20 +1,18 @@
-/**
- * Configuración de variables de entorno
- * Valida que las variables críticas existan en tiempo de ejecución
- */
+type EmailJsEnv = {
+  serviceId: string;
+  templateId: string;
+  publicKey: string;
+};
 
-function getEnvVar(key: string): string {
-  const value = process.env[key];
-  if (!value) {
-    throw new Error(`Missing required environment variable: ${key}`);
+// Read public env vars safely so importing this module never breaks prerender.
+export function getEmailJsEnv(): EmailJsEnv | null {
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+  if (!serviceId || !templateId || !publicKey) {
+    return null;
   }
-  return value;
-}
 
-export const env = {
-  emailjs: {
-    serviceId: getEnvVar('NEXT_PUBLIC_EMAILJS_SERVICE_ID'),
-    templateId: getEnvVar('NEXT_PUBLIC_EMAILJS_TEMPLATE_ID'),
-    publicKey: getEnvVar('NEXT_PUBLIC_EMAILJS_PUBLIC_KEY'),
-  },
-} as const;
+  return { serviceId, templateId, publicKey };
+}
