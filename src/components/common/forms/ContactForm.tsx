@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { env } from "@/lib/env";
 
 export const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -14,10 +15,10 @@ export const ContactForm = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+          env.emailjs.serviceId,
+          env.emailjs.templateId,
           form.current,
-          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+          env.emailjs.publicKey
         )
         .then(
           (_result) => {
