@@ -30,7 +30,7 @@ export const Statistics: React.FC = () => {
           {stats.map(({ data, desc }, idx) => (
             <li key={idx} className="max-w-[15rem]">
               <h4 className="text-4xl font-semibold text-white">{data}</h4>
-              <p className="mt-3 text-gray-400 font-medium">{desc}</p>
+              <p className="mt-3 text-gray-500 font-medium">{desc}</p>
             </li>
           ))}
         </ul>

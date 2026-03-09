@@ -12,14 +12,14 @@ export const ProjectCard: React.FC<Project> = ({
   altProject,
 }) => {
   return (
-    <div className="overflow-hidden rounded-md p-4 m-4 shadow-md transition duration-300 hover:border-neutral-700 border-2 border-transparent">
-      <h3 className="text-xl font-bold">{title}</h3>
-      <p className="py-4 text-sm">{description}</p>
+    <div className="overflow-hidden rounded-md p-4 m-4 shadow-md border-2 border-gray-800 transition-all duration-300 hover:shadow-lg hover:border-gray-600 hover:scale-105 hover:-translate-y-1 cursor-pointer">
+      <h3 className="text-xl font-bold text-white">{title}</h3>
+      <p className="py-4 text-sm text-gray-300">{description}</p>
       <div className="flex flex-wrap gap-2 items-center">
         {techStack.map((tech: string) => (
           <span
             key={tech}
-            className="px-3 py-1 text-sm text-white duration-150 bg-indigo-600 rounded-lg hover:bg-indigo-700 active:bg-indigo-800"
+            className="px-3 py-1 text-sm text-black duration-300 bg-white rounded-lg transition-all hover:bg-gray-200 hover:scale-105 active:bg-gray-300 cursor-pointer"
           >
             {tech}
           </span>
@@ -33,7 +33,7 @@ export const ProjectCard: React.FC<Project> = ({
           href={demoLink}
           target="_blank"
           rel="noopener noreferrer"
-          className=" hover:text-purple-700 flex items-center"
+          className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center group"
         >
           <FiFolder className="mx-2" /> View Demo
         </a>
@@ -41,7 +41,7 @@ export const ProjectCard: React.FC<Project> = ({
           href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-purple-700 flex items-center"
+          className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center group"
         >
           <FiGithub className="mx-2" /> View on GitHub
         </a>

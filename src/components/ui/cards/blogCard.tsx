@@ -10,7 +10,7 @@ export const BlogCard: React.FC<BlogPost> = ({
   desc,
 }) => {
   return (
-    <div className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm">
+    <div className="max-w-md mx-auto mt-4 shadow-lg border border-gray-800 rounded-md transition-all duration-300 hover:border-gray-600 hover:shadow-xl hover:scale-105 hover:-translate-y-1 cursor-pointer">
       <Image
         src={img}
         alt={alt}
@@ -30,12 +30,12 @@ export const BlogCard: React.FC<BlogPost> = ({
         </div>
         <div className="ml-3">
           <span className="block">Rodri</span>
-          <span className="block text-gray-400 text-sm">{date}</span>
+          <span className="block text-gray-500 text-sm">{date}</span>
         </div>
       </div>
       <div className="pt-3 ml-4 mr-2 mb-3">
         <h3 className="text-xl">{title}</h3>
-        <p className="text-sm mt-4 text-gray-300">{desc}</p>
+        <p className="text-sm mt-4 text-gray-400">{desc}</p>
       </div>
     </div>
   );

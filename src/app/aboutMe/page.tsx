@@ -102,7 +102,7 @@ export default function AboutMe() {
 
   return (
     <section className="min-h-screen p-5 flex flex-col justify-center items-center">
-      <h2 className="text-3xl lg:text-4xl font-bold text-indigo-600">
+      <h2 className="text-3xl lg:text-4xl font-bold text-white">
         Un pocos mas sobre mi..
       </h2>
       <div className="w-full flex flex-col lg:flex-row items-center my-5">

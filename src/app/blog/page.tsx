@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 export default function Blog() {
   return (
     <section className="max-w-screen-xl p-4 mx-auto mt-4 md:px-8">
-      <h1 className="text-4xl font-bold text-center text-indigo-600 ">Blog</h1>
+      <h1 className="text-4xl font-bold text-center text-white">Blog</h1>
       <div className="grid gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-3">
         <BlogCard
           img={talento}

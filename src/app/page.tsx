@@ -6,12 +6,12 @@ import FotoPerfil from "../../public/images/foto-perfil2.webp";
 export default function Home() {
   return (
     <section className="min-h-screen p-5 flex flex-col lg:flex-row justify-center items-center">
-      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center mb-4">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center mb-4 animate-fade-up">
         <Image
           src={FotoPerfil}
           alt="foto perfil rodrigo peña"
           priority
-          className="rounded-full"
+          className="rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg"
           width={200}
           height={200}
         />
@@ -30,14 +30,14 @@ export default function Home() {
           <ButtonCv />
         </div>
       </div>
-      <div className="w-full lg:w-1/2 my-2">
-        <h2 className="text-4xl md:text-5xl font-bold">
+      <div className="w-full lg:w-1/2 my-2 animate-fade-up" style={{animationDelay: "0.1s"}}>
+        <h2 className="text-4xl md:text-5xl font-bold transition-all duration-300">
           Hola soy Rodrigo Peña Fernandez. 👋
         </h2>
-        <div className="mt-8 space-y-4 text-lg md:text-lg">
-          <span className="text-sky-200">Full stack Developer</span>
+        <div className="mt-8 space-y-4 text-lg md:text-lg text-gray-300">
+          <span className="text-white font-semibold">Full stack Developer</span>
           <p>
-            <span className="text-yellow-200">
+            <span className="text-white">
               Curioso, colaborativo y apasionado por el emprendimiento y las
               comunidades IT
             </span>

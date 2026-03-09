@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 export default function Portfolio() {
   return (
     <section className="py-4 w-full mx-auto sm:px-6 lg:px-8">
-      <h2 className="text-3xl text-indigo-700 font-bold flex justify-center">
+      <h2 className="text-3xl text-white font-bold flex justify-center">
         Porfolio
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
