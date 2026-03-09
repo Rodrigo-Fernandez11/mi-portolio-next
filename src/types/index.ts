@@ -25,11 +25,6 @@ export interface SocialLinkProps {
   label: string;
 }
 
-export interface ContactMethodProps {
-  icon: React.ReactNode;
-  contact: string;
-}
-
 export interface EventProps {
   icon: React.ReactNode;
   title: string;

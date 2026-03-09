@@ -28,14 +28,3 @@ declare module "*.svg" {
   export default value;
 }
 
-// Variables de entorno tipadas
-declare namespace NodeJS {
-  interface ProcessEnv {
-    readonly NODE_ENV: "development" | "production" | "test";
-    
-    // EmailJS - credenciales públicas para cliente
-    readonly NEXT_PUBLIC_EMAILJS_SERVICE_ID: string;
-    readonly NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: string;
-    readonly NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: string;
-  }
-}

@@ -37,14 +37,6 @@ export const Navbar = () => {
               Portafolio
             </Link>
           </li>
-          <li>
-            <Link
-              className="underline decoration-indigo-300 hover:text-indigo-500"
-              href={"/contact"}
-            >
-              Contacto
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>
