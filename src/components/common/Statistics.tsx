@@ -30,16 +30,16 @@ export const Statistics: React.FC = () => {
       </h3>
       <p className="mb-5 text-base text-gray-400">Impacto medible y crecimiento profesional.</p>
 
-      <ul className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      <ul className="grid grid-cols-1 gap-3">
         {stats.map(({ value, label, note }, idx) => (
           <li
             key={label}
-            className="min-w-0 p-4 transition-all duration-300 border border-gray-800 animate-fade-up rounded-xl bg-black/50 hover:-translate-y-1 hover:border-gray-600 hover:shadow-lg"
+            className="min-w-0 p-3 sm:p-4 transition-all duration-300 border border-gray-800 animate-fade-up rounded-xl bg-black/50 hover:-translate-y-1 hover:border-gray-600 hover:shadow-lg"
             style={{ animationDelay: `${idx * 0.08}s` }}
           >
-            <p className="text-3xl font-semibold leading-none text-white">{value}</p>
-            <h4 className="mt-2 text-sm font-semibold leading-snug text-gray-200">{label}</h4>
-            <p className="mt-2 text-xs leading-relaxed text-gray-500">{note}</p>
+            <p className="text-2xl sm:text-3xl font-semibold leading-none text-white">{value}</p>
+            <h4 className="mt-2 text-xs sm:text-sm font-semibold leading-snug text-gray-200">{label}</h4>
+            <p className="mt-1 sm:mt-2 text-xs leading-relaxed text-gray-500">{note}</p>
           </li>
         ))}
       </ul>

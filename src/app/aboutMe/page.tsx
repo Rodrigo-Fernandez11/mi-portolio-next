@@ -9,6 +9,7 @@ import {
 } from "react-icons/si";
 import Image from "next/image";
 import mindset from "../../../public/mindset.svg";
+import { CopyEmailButton } from "./components";
 
 export const metadata: Metadata = {
   title: "Sobre Mí - Rodrigo Peña",
@@ -127,26 +128,26 @@ export default function AboutMe() {
   return (
     <div className="min-h-screen w-full">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 py-20 lg:py-28">
+      <section className="relative overflow-hidden px-4 py-12 sm:py-16 lg:py-28">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 to-transparent" />
         
         <div className="relative mx-auto max-w-6xl">
-          <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-start">
-            <div className="flex-1 space-y-6 text-center lg:text-left">
+          <div className="flex flex-col items-center gap-8 sm:gap-10 lg:flex-row lg:items-start">
+            <div className="flex-1 space-y-4 sm:space-y-6 text-center lg:text-left">
               <div className="inline-block">
-                <span className="animate-pulse rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-1.5 text-sm font-semibold text-white">
+                <span className="animate-pulse rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-3 py-1.5 sm:px-4 text-xs sm:text-sm font-semibold text-white">
                   Sobre mí
                 </span>
               </div>
               
-              <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl xl:text-6xl">
+              <h1 className="text-3xl sm:text-4xl font-bold leading-tight text-white md:text-5xl xl:text-6xl">
                 Más que líneas de código,{" "}
                 <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                   construyo experiencias
                 </span>
               </h1>
               
-              <p className="text-lg leading-relaxed text-gray-300 lg:text-xl">
+              <p className="text-base sm:text-lg leading-relaxed text-gray-300 lg:text-xl">
                 Soy una persona{" "}
                 <span className="font-semibold text-white">curiosa e inquieta</span>, me
                 intriga saber cómo funcionan las cosas y disfruto formando parte de
@@ -154,26 +155,26 @@ export default function AboutMe() {
                 tecnología y la innovación.
               </p>
               
-              <p className="text-base leading-relaxed text-gray-400 lg:text-lg">
+              <p className="text-sm sm:text-base leading-relaxed text-gray-400 lg:text-lg">
                 Mi camino en el desarrollo web ha sido autodidacta y constante. Desde mis
                 primeros pasos con FreeCodeCamp hasta participar en hackathons de Web3,
                 cada experiencia me ha moldeado como desarrollador y profesional.
               </p>
 
-              <div className="flex flex-wrap items-center justify-center gap-6 pt-4 lg:justify-start">
+              <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 pt-4 lg:justify-start">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-white">3+</p>
-                  <p className="text-sm text-gray-400">Años de experiencia</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-white">3+</p>
+                  <p className="text-xs sm:text-sm text-gray-400">Años de experiencia</p>
                 </div>
-                <div className="h-12 w-px bg-gray-700" />
+                <div className="hidden sm:block h-12 w-px bg-gray-700" />
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-white">15+</p>
-                  <p className="text-sm text-gray-400">Proyectos completados</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-white">15+</p>
+                  <p className="text-xs sm:text-sm text-gray-400">Proyectos completados</p>
                 </div>
-                <div className="h-12 w-px bg-gray-700" />
+                <div className="hidden sm:block h-12 w-px bg-gray-700" />
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-white">2</p>
-                  <p className="text-sm text-gray-400">Hackathons</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-white">2</p>
+                  <p className="text-xs sm:text-sm text-gray-400">Hackathons</p>
                 </div>
               </div>
             </div>
@@ -184,7 +185,7 @@ export default function AboutMe() {
                 <Image
                   src={mindset}
                   alt="Ilustración de mentalidad de desarrollo"
-                  className="relative drop-shadow-2xl"
+                  className="relative drop-shadow-2xl w-64 sm:w-80 lg:w-96 mx-auto"
                   width={400}
                   height={400}
                   priority
@@ -196,78 +197,93 @@ export default function AboutMe() {
       </section>
 
       {/* Values Section */}
-      <section className="px-4 py-16 lg:py-20">
+      <section className="px-4 py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
+          <div className="mb-8 sm:mb-12 text-center">
+            <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-bold text-white lg:text-4xl">
               Mi filosofía de trabajo
             </h2>
-            <p className="text-lg text-gray-400">
+            <p className="text-base sm:text-lg text-gray-400">
               Los valores que guían mi desarrollo profesional
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900 to-gray-950 p-6 transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:shadow-xl hover:shadow-blue-500/10"
+                className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900 to-gray-950 p-5 sm:p-6 transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:shadow-xl hover:shadow-blue-500/10"
               >
                 <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 blur-2xl transition-all duration-300 group-hover:scale-150" />
                 
                 <div className="relative">
-                  <div className="mb-4 inline-flex rounded-xl bg-gray-800/50 p-3 transition-all duration-300 group-hover:bg-gray-800">
+                  <div className="mb-3 sm:mb-4 inline-flex rounded-xl bg-gray-800/50 p-2.5 sm:p-3 transition-all duration-300 group-hover:bg-gray-800">
                     {value.icon}
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-white">
+                  <h3 className="mb-2 text-lg sm:text-xl font-bold text-white">
                     {value.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-gray-400">
+                  <p className="text-xs sm:text-sm leading-relaxed text-gray-400">
                     {value.description}
                   </p>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* Mini CTA después de valores */}
+          <div className="mt-8 sm:mt-12 text-center">
+            <p className="mb-3 sm:mb-4 text-sm sm:text-base text-gray-400">
+              ¿Te identificás con estos valores?
+            </p>
+            <a
+              href="https://www.linkedin.com/in/rodrip-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-900/50 px-5 py-2 sm:px-6 sm:py-2.5 text-xs sm:text-sm font-medium text-white transition-all duration-300 hover:border-gray-600 hover:bg-gray-900"
+            >
+              Conectemos en LinkedIn
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Timeline Section */}
-      <section className="px-4 py-16 lg:py-20">
+      <section className="px-4 py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
+          <div className="mb-12 sm:mb-16 text-center">
+            <h2 className="mb-3 sm:mb-4 text-2xl sm:text-3xl font-bold text-white lg:text-4xl">
               Mi trayectoria
             </h2>
-            <p className="text-lg text-gray-400">
+            <p className="text-base sm:text-lg text-gray-400">
               El camino que me trajo hasta aquí
             </p>
           </div>
 
-          <div className="relative space-y-8">
+          <div className="relative space-y-6 sm:space-y-8">
             {/* Timeline vertical line */}
             <div className="absolute left-8 top-0 h-full w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 lg:left-1/2" />
 
             {timeline.map((item, index) => (
               <div
                 key={index}
-                className={`relative flex items-start gap-6 lg:gap-12 ${
+                className={`relative flex items-start gap-4 sm:gap-6 lg:gap-12 ${
                   index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
                 }`}
               >
                 {/* Timeline dot */}
-                <div className="absolute left-[26px] top-6 z-10 h-5 w-5 rounded-full border-4 border-gray-950 bg-gradient-to-br from-blue-500 to-purple-500 lg:left-1/2 lg:-translate-x-1/2" />
+                <div className="absolute left-[22px] sm:left-[26px] top-6 z-10 h-4 w-4 sm:h-5 sm:w-5 rounded-full border-4 border-gray-950 bg-gradient-to-br from-blue-500 to-purple-500 lg:left-1/2 lg:-translate-x-1/2" />
 
                 {/* Content */}
                 <div
-                  className={`ml-20 flex-1 lg:ml-0 ${
+                  className={`ml-14 sm:ml-20 flex-1 lg:ml-0 ${
                     index % 2 === 0 ? "lg:pr-12 lg:text-right" : "lg:pl-12"
                   }`}
                 >
                   <div
                     className={`group inline-block w-full rounded-2xl border border-gray-800 bg-gradient-to-br ${item.color} p-[1px] transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 lg:max-w-md`}
                   >
-                    <div className="h-full rounded-2xl bg-gray-950 p-6">
+                    <div className="h-full rounded-2xl bg-gray-950 p-4 sm:p-6">
                       <div
                         className={`mb-3 flex items-center gap-3 ${
                           index % 2 === 0 ? "lg:flex-row-reverse lg:justify-end" : ""
@@ -281,7 +297,7 @@ export default function AboutMe() {
                         </span>
                       </div>
                       
-                      <h3 className="mb-1 text-xl font-bold text-white">
+                      <h3 className="mb-1 text-lg sm:text-xl font-bold text-white">
                         {item.title}
                       </h3>
                       <p className="mb-3 text-sm font-semibold text-blue-400">
@@ -305,31 +321,48 @@ export default function AboutMe() {
       {/* CTA Section */}
       <section className="px-4 py-16 lg:py-20">
         <div className="mx-auto max-w-4xl">
-          <div className="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-blue-950/50 to-purple-950/50 p-8 lg:p-12">
+          <div className="relative overflow-hidden rounded-3xl border border-gray-800 bg-gradient-to-br from-blue-950/50 to-purple-950/50 p-6 sm:p-8 lg:p-12">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10" />
             
             <div className="relative text-center">
-              <FaCode className="mx-auto mb-6 text-5xl text-blue-400" />
-              <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
+              <FaCode className="mx-auto mb-6 text-4xl sm:text-5xl text-blue-400" />
+              <h2 className="mb-4 text-2xl sm:text-3xl font-bold text-white lg:text-4xl">
                 ¿Trabajemos juntos?
               </h2>
-              <p className="mb-8 text-lg text-gray-300">
+              <p className="mb-6 sm:mb-8 text-base sm:text-lg text-gray-300">
                 Siempre estoy abierto a nuevos proyectos, colaboraciones o simplemente
                 charlar sobre tecnología. ¡Conectemos!
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4">
+              
+              {/* Botones principales */}
+              <div className="mb-6 sm:mb-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                <CopyEmailButton />
                 <a
-                  href="mailto:rodrigopena.dev@gmail.com"
-                  className="rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50"
+                  href="https://wa.me/5491123018269?text=Hola%20Rodrigo,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-green-600 bg-green-600/20 px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all duration-300 hover:border-green-500 hover:bg-green-600/30"
+                  aria-label="Contactar por WhatsApp"
                 >
-                  Enviar mensaje
+                  WhatsApp
                 </a>
                 <a
                   href="/portfolio"
-                  className="rounded-full border border-gray-700 bg-gray-900/50 px-8 py-3 font-semibold text-white transition-all duration-300 hover:border-gray-600 hover:bg-gray-900"
+                  className="rounded-full border border-gray-700 bg-gray-900/50 px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white transition-all duration-300 hover:border-gray-600 hover:bg-gray-900"
+                  aria-label="Ver portfolio de proyectos"
                 >
                   Ver proyectos
                 </a>
+              </div>
+
+              {/* Información de contacto */}
+              <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-400">
+                <p>
+                  <span className="font-medium text-gray-300">Email:</span> rodrip602@gmail.com
+                </p>
+                <p>
+                  <span className="font-medium text-gray-300">Ubicación:</span> Buenos Aires, Argentina
+                </p>
               </div>
             </div>
           </div>

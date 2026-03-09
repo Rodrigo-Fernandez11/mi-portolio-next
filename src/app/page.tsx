@@ -5,61 +5,121 @@ import FotoPerfil from "../../public/images/foto-perfil2.webp";
 
 export default function Home() {
   return (
-    <section className="mx-auto flex min-h-[calc(100vh-72px)] w-full max-w-6xl flex-col gap-8 px-4 py-5 lg:flex-row lg:items-start lg:gap-10">
-      <div className="animate-fade-up flex w-full flex-col items-center lg:w-[42%] lg:items-start">
-        <Image
-          src={FotoPerfil}
-          alt="foto perfil rodrigo peña"
-          priority
-          className="h-36 w-36 rounded-full border border-gray-800 object-cover transition-all duration-300 hover:scale-105 hover:shadow-lg sm:h-44 sm:w-44"
-          width={200}
-          height={200}
-        />
-        <div className="mt-5 w-full">
-          <Statistics />
-        </div>
-        <div className="my-5 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-          <SocialLink
-            href="https://github.com/Rodrigo-Fernandez11"
-            icon={<FaGithub size={30} />}
-            label="GitHub"
-          />
-          <SocialLink
-            href="https://www.linkedin.com/in/rodrigo-frontend-developer/"
-            icon={<FaLinkedin size={30} />}
-            label="LinkedIn"
-          />
-          <ButtonCv />
-        </div>
-      </div>
-      <div
-        className="animate-fade-up w-full lg:w-[58%]"
-        style={{ animationDelay: "0.1s" }}
-      >
-        <h1 className="text-4xl font-bold leading-tight transition-all duration-300 sm:text-5xl lg:text-[3rem] xl:text-[3.5rem]">
-          Hola soy Rodrigo Peña Fernandez. 👋
-        </h1>
-        <div className="mt-5 space-y-4">
-          <span className="inline-flex px-4 py-2 text-base font-semibold text-white border border-gray-700 rounded-full">
-            Full Stack Developer
-          </span>
-          <p className="max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">
-            <span className="text-white font-medium">
-              Curioso, colaborativo y apasionado por el emprendimiento y las
-              comunidades IT
+    <div className="relative min-h-[calc(100vh-72px)] w-full overflow-hidden">
+      {/* Background effects */}
+      <div className="pointer-events-none absolute right-[-100px] top-[-80px] h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-[-100px] left-[-60px] h-64 w-64 rounded-full bg-purple-500/10 blur-3xl" />
+
+      <section className="relative mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 py-8 sm:py-10 lg:flex-row lg:items-start lg:gap-12 lg:py-12">
+        {/* Left Column - Profile & Stats */}
+        <aside className="animate-fade-up flex w-full flex-col items-center lg:w-[40%] lg:items-start">
+          {/* Profile Image */}
+          <div className="mb-6">
+            <Image
+              src={FotoPerfil}
+              alt="Rodrigo Peña - Full Stack Developer"
+              priority
+              className="h-40 w-40 rounded-full border-2 border-gray-800 object-cover shadow-xl transition-all duration-300 hover:scale-105 hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-500/20 sm:h-48 sm:w-48"
+              width={200}
+              height={200}
+            />
+          </div>
+
+          {/* Download CV - Main CTA */}
+          <div className="mb-6 w-full">
+            <ButtonCv />
+          </div>
+
+          {/* Social Links */}
+          <div className="flex w-full flex-col gap-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
+              Conectá conmigo
+            </h3>
+            <div className="flex flex-col gap-3">
+              <SocialLink
+                href="https://github.com/Rodrigo-Fernandez11"
+                icon={<FaGithub size={24} />}
+                label="GitHub"
+              />
+              <SocialLink
+                href="https://www.linkedin.com/in/rodrip-dev/"
+                icon={<FaLinkedin size={24} />}
+                label="LinkedIn"
+              />
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="my-6 h-px w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
+
+          {/* Statistics */}
+          <div className="w-full">
+            <Statistics />
+          </div>
+        </aside>
+
+        {/* Right Column - Main Content */}
+        <main
+          className="animate-fade-up w-full lg:w-[60%]"
+          style={{ animationDelay: "0.1s" }}
+        >
+          {/* Title */}
+          <h1 className="mb-6 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl xl:text-[3.5rem]">
+            Hola, soy{" "}
+            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Rodrigo Peña Fernandez
+            </span>{" "}
+            👋
+          </h1>
+
+          {/* Badge */}
+          <div className="mb-6">
+            <span className="inline-flex items-center rounded-full border border-gray-700 bg-gray-900/50 px-4 py-2 text-sm font-semibold text-white sm:text-base">
+              Full Stack Developer
             </span>
-            , especializado en desarrollo front-end React con sólidos
-            conocimientos en backend Node.js y desarrollo blockchain con
-            Solidity. Además, cuento con experiencia en marketing digital, estas
-            habilidades las he aplicado y demostrado en proyectos personales,
-            freelance y en mi participación en diversas comunidades y
-            hackathons.
-          </p>
-        </div>
-        <div className="mt-6">
-          <FavoriteTools />
-        </div>
-      </div>
-    </section>
+          </div>
+
+          {/* Description */}
+          <div className="mb-8 space-y-4">
+            <p className="text-base leading-relaxed text-gray-300 sm:text-lg">
+              <span className="font-semibold text-white">
+                Curioso, colaborativo y apasionado por el emprendimiento y las
+                comunidades IT
+              </span>
+              , especializado en desarrollo front-end con React con sólidos
+              conocimientos en backend Node.js y desarrollo blockchain con
+              Solidity.
+            </p>
+            <p className="text-sm leading-relaxed text-gray-400 sm:text-base">
+              Además, cuento con experiencia en marketing digital. Estas
+              habilidades las he aplicado y demostrado en proyectos personales,
+              freelance y en mi participación en diversas comunidades y
+              hackathons.
+            </p>
+          </div>
+
+          {/* Tech Stack */}
+          <div className="mb-8">
+            <FavoriteTools />
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+            <a
+              href="/portfolio"
+              className="rounded-lg border border-blue-500/50 bg-blue-500/10 px-6 py-2.5 text-sm font-medium text-blue-400 transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:bg-blue-500/20 hover:shadow-lg hover:shadow-blue-500/20 sm:px-7 sm:text-base"
+            >
+              Ver mis proyectos
+            </a>
+            <a
+              href="/aboutMe"
+              className="rounded-lg border border-gray-700 bg-gray-900/50 px-6 py-2.5 text-sm font-medium text-gray-300 transition-all duration-300 hover:scale-105 hover:border-gray-600 hover:bg-gray-900 hover:text-white sm:px-7 sm:text-base"
+            >
+              Conocer más
+            </a>
+          </div>
+        </main>
+      </section>
+    </div>
   );
 }

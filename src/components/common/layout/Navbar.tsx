@@ -3,8 +3,8 @@ import Link from "next/link";
 export const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-sm bg-black bg-opacity-95 border-b border-gray-800 border-opacity-50">
-      <div className="container mx-auto flex items-center justify-center px-6 py-4">
-        <ul className="flex items-center gap-8 md:gap-12">
+      <div className="container mx-auto flex items-center justify-center px-4 py-4 sm:px-6">
+        <ul className="flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12">
           <li>
             <Link
               className="relative font-medium text-white text-base md:text-lg transition-all duration-300 hover:text-gray-400 hover:scale-105 group"
