@@ -3,7 +3,7 @@ const jsonLd = {
   '@type': 'Person',
   name: 'Rodrigo Peña',
   url: 'https://mi-portolio-next.vercel.app',
-  image: 'https://mi-portolio-next.vercel.app/images/foto-perfil2.webp',
+  image: 'https://mi-portolio-next.vercel.app/images/foto-perfil-rodrigo-peña.webp',
   description: 'Desarrollador Full Stack con experiencia en React, Next.js, Node.js y Tailwind CSS',
   jobTitle: 'Desarrollador Full Stack',
   sameAs: [

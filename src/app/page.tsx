@@ -8,7 +8,7 @@ import {
   Statistics,
 } from "@/components";
 import { ButtonCv } from "./components";
-import FotoPerfil from "../../public/images/foto-perfil2.webp";
+import FotoPerfil from "../../public/images/foto-perfil-rodrigo-peña.webp";
 
 export default function Home() {
   return (

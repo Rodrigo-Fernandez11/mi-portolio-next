@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { BlogPost } from "@/types";
 import Image from "next/image";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-import perfi from "../../../../public/images/foto-perfil2.webp";
+import perfi from "../../../../public/images/foto-perfil-rodrigo-peña.webp";
 
 type BlogCardProps = BlogPost & {
   className?: string;
