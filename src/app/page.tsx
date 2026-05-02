@@ -94,15 +94,12 @@ export default function Home() {
                 Curioso, colaborativo y apasionado por el emprendimiento y las
                 comunidades IT
               </span>
-              , especializado en desarrollo front-end con React con sólidos
-              conocimientos en backend Node.js y desarrollo blockchain con
-              Solidity.
+              , especializado en desarrollo front-end con React y Next.js, con sólidos
+              conocimientos en backend con Node.js e inteligencia artificial aplicada al desarrollo de software.
             </p>
             <p className="text-sm leading-relaxed text-gray-400 sm:text-base">
-              Además, cuento con experiencia en marketing digital. Estas
-              habilidades las he aplicado y demostrado en proyectos personales,
-              freelance y en mi participación en diversas comunidades y
-              hackathons.
+              Trabajo con modelos de lenguaje, arquitecturas de agentes, RAG y herramientas de AI-assisted coding.
+              Actualmente freelancer con clientes en Argentina y España, y estudiante de Ingeniería Informática.
             </p>
           </div>
 

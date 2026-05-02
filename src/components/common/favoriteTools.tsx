@@ -68,7 +68,7 @@ export const FavoriteTools: React.FC = () => {
 
       <div>
         <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-400">
-          Tecnologias que estoy interesado en aprender
+          Tecnologias que estoy aprendiendo
         </p>
         <div className="flex flex-wrap items-center gap-3 text-3xl">
           <FaDocker className={`${iconClass} text-sky-500 hover:text-sky-600`} title="Docker" />

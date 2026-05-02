@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FaGraduationCap, FaCode, FaRocket, FaUsers, FaLightbulb, FaHeart } from "react-icons/fa";
+import { FaGraduationCap, FaCode, FaRocket, FaUsers, FaLightbulb, FaHeart, FaBrain, FaBriefcase } from "react-icons/fa";
 import { CtaPanel, SectionBadge, SectionTitle } from "@/components";
 import {
   SiGoogle,
@@ -116,13 +116,31 @@ export default function AboutMe() {
       color: "from-cyan-500 to-blue-600",
     },
     {
-      year: "Actualidad",
+      year: "2024",
       icon: <FaGraduationCap size={24} />,
       title: "Ingeniería Informática",
       org: "Universidad - En curso",
       description:
         "Estudiante universitario de Ingeniería Informática, complementando mi experiencia práctica con formación académica sólida mientras continúo especializándome.",
       color: "from-indigo-500 to-purple-600",
+    },
+    {
+      year: "2025",
+      icon: <FaBrain size={24} />,
+      title: "IA aplicada al desarrollo",
+      org: "Especialización autodidacta",
+      description:
+        "Me especialicé en inteligencia artificial aplicada al desarrollo de software: modelos de lenguaje (GPT, Claude, Gemini), arquitecturas de agentes, RAG, MCP, function calling y streaming. Incorporé estas herramientas en proyectos reales y adopté AI-assisted coding como parte de mi flujo de trabajo diario.",
+      color: "from-violet-500 to-fuchsia-600",
+    },
+    {
+      year: "Actualidad",
+      icon: <FaBriefcase size={24} />,
+      title: "Freelancer Full Stack",
+      org: "Clientes locales & España",
+      description:
+        "Trabajo de forma independiente con clientes en Argentina y una empresa de España. Gestiono proyectos end-to-end: desde la definición de requerimientos hasta el deploy en producción, aplicando todo lo aprendido en un contexto real y profesional.",
+      color: "from-emerald-500 to-teal-600",
     },
   ];
 
@@ -327,15 +345,6 @@ export default function AboutMe() {
             actions={
               <>
                 <CopyEmailButton />
-                <a
-                  href="https://wa.me/5491123018269?text=Hola%20Rodrigo,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-green-600 bg-green-600/20 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:border-green-500 hover:bg-green-600/30 sm:px-8 sm:py-3 sm:text-base"
-                  aria-label="Contactar por WhatsApp"
-                >
-                  WhatsApp
-                </a>
                 <a
                   href="/portfolio"
                   className="rounded-full border border-gray-700 bg-gray-900/50 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:border-gray-600 hover:bg-gray-900 sm:px-8 sm:py-3 sm:text-base"

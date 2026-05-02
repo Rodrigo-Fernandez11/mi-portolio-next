@@ -35,6 +35,7 @@ export default function Portfolio() {
     "Node.js",
     "Integración de APIs",
     "Supabase",
+    "IA & Agentes",
   ];
 
   return (
